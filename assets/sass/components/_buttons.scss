@@ -1,4 +1,4 @@
-.view-project{
+button.view-project{
   color:white;
   font-family: 'museo-sans';
   padding:14px;
@@ -6,17 +6,32 @@
   border:none;
 }
 
-#cv-button{
+#page-down {
+   position:fixed;
+   top:0;
+   left:0;
+   z-index: 99;
+}
+
+#page-up {
+  z-index: 99;
+  position:fixed;
+  top:0;
+  left:70;
+}
+
+button#cv-button{
   background-color: #65D565;
 }
 
 #arrow-prompt{
-  position:absolute;
-  width:200px;
-  left:20px;
+  position:fixed;
+  width:150px;
+  left:-40px;
   text-align: right;
-  bottom:100px;
+  bottom:50px;
   transform: rotate(270deg);
+  z-index: 99;
   p{
     font-family: museo-sans;
   }
@@ -27,7 +42,7 @@
         padding-right: 0px;
       }
       50% {
-        padding-right: 30px;
+        padding-right: 20px;
       }
       100% {
         padding-right: 0px;

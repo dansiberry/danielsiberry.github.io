@@ -2,13 +2,8 @@
 
   transition: background-color 1s;
 
-  #page-down, #page-up {
-   position:fixed;
-   z-index: 99;
-  }
-
   .scroll-page {
-    padding: 20vh 5vw 5vh;
+    padding: 15vh 5vw 5vh;
     position:fixed;
     width:100%;
     height: 100vh;
@@ -28,6 +23,7 @@
   #landing{
     display: flex;
     align-items: center;
+    padding-top: 10vh;
 
     h1{
       z-index: 99;
@@ -58,11 +54,91 @@
     #role h4, #year h4, #platform h4, #period {
       color:#65D565;
     }
-    #cv-background{
+    #cv-background-front{
       position:absolute;
-      bottom:0;
+      bottom:-5vh;
+      margin-left: -5vw;
+      width:105vw;
+    }
+    #cv-background-back{
+      position:absolute;
+      bottom:0vh;
       margin-left: -5vw;
       width:100vw;
+      opacity: 0.2;
+      transform: scaleX(-1);
+    }
+    // #speech-bubble-1{
+    //   position:absolute;
+    //   bottom:150px;
+    //   left:150px;
+    //   z-index: 99;
+    // }
+    #triangle-green {
+      position:absolute;
+      bottom: -30px;
+      right:10px;
+      height: 20px;
+      width: 20px;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 15px solid transparent;
+      border-top: 15px solid #65D565;
+    }
+    .text-line{
+      height:1px;
+      border-top:2px solid #DCDCDC;
+      border-bottom: 2px solid #DCDCDC;
+      border-radius: 2px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    .text-last-line{
+      width:70%;
+    }
+    .text-block{
+      height:75%;
+      width:75%;
+    }
+
+    #triangle-white {
+      position: absolute;
+      bottom: -25px;
+      right: 10px;
+      height: 20px;
+      width: 20px;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 15px solid transparent;
+      border-top: 15px solid white;
+    }
+    #dynamic-speech-bubble {
+      flex-direction: column;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      position:relative;
+      position:absolute;
+      bottom:150px;
+      left:150px;
+      z-index: 99;
+      width:80px;
+      height:50px;
+      border: 3px solid #65D565;
+      border-radius: 5px;
+      background-color: white;
+    }
+    #speech-bubble-2{
+      position:absolute;
+      bottom:210px;
+      left:490px;
+      z-index: 99;
+    }
+    #speech-bubble-3{
+      position:absolute;
+      bottom:140px;
+      right:200px;
+      z-index: 99;
     }
   }
 
@@ -88,7 +164,7 @@
     background-color: white;
   }
   .background-1 {
-    background-color: #F5F5F5;
+    background-color: white;
   }
   .background-2{
     background-color: pink;
