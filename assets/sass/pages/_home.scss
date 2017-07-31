@@ -1,11 +1,14 @@
 #home {
 
+  transition: background-color 1s;
+
   #page-down, #page-up {
    position:fixed;
    z-index: 99;
   }
 
   .scroll-page {
+    padding: 20vh 5vw 5vh;
     position:fixed;
     width:100%;
     height: 100vh;
@@ -49,32 +52,22 @@
         bottom: 0px;
       }
     }
+  }
 
-    #arrow-prompt{
-      position:absolute;
-      width:200px;
-      left:20px;
-      text-align: right;
-      bottom:100px;
-      transform: rotate(270deg);
-      p{
-        font-family: museo-sans;
-      }
-      span {
-        animation: pulse 2s ease infinite;
-        @keyframes pulse {
-          0% {
-            padding-right: 0px;
-          }
-          50% {
-            padding-right: 30px;
-          }
-          100% {
-            padding-right: 0px;
-          }
-        }
-      }
+  #citizenvoice {
+    #role h4, #year h4, #platform h4, #period {
+      color:#65D565;
     }
+    #cv-background{
+      position:absolute;
+      bottom:0;
+      margin-left: -5vw;
+      width:100vw;
+    }
+  }
+
+  #role {
+    padding-left: 0px;
   }
 
   .in-view {
@@ -90,3 +83,14 @@
   }
 
 }
+
+  .backgroud-0 {
+    background-color: white;
+  }
+  .background-1 {
+    background-color: #F5F5F5;
+  }
+  .background-2{
+    background-color: pink;
+  }
+

@@ -1,0 +1,37 @@
+.view-project{
+  color:white;
+  font-family: 'museo-sans';
+  padding:14px;
+  font-size: 16px;
+  border:none;
+}
+
+#cv-button{
+  background-color: #65D565;
+}
+
+#arrow-prompt{
+  position:absolute;
+  width:200px;
+  left:20px;
+  text-align: right;
+  bottom:100px;
+  transform: rotate(270deg);
+  p{
+    font-family: museo-sans;
+  }
+  span {
+    animation: pulse 2s ease infinite;
+    @keyframes pulse {
+      0% {
+        padding-right: 0px;
+      }
+      50% {
+        padding-right: 30px;
+      }
+      100% {
+        padding-right: 0px;
+      }
+    }
+  }
+}
