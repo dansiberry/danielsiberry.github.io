@@ -24,29 +24,4 @@ button#cv-button{
   background-color: #65D565;
 }
 
-#arrow-prompt{
-  position:fixed;
-  width:150px;
-  left:-40px;
-  text-align: right;
-  bottom:50px;
-  transform: rotate(270deg);
-  z-index: 99;
-  p{
-    font-family: museo-sans;
-  }
-  span {
-    animation: pulse 2s ease infinite;
-    @keyframes pulse {
-      0% {
-        padding-right: 0px;
-      }
-      50% {
-        padding-right: 20px;
-      }
-      100% {
-        padding-right: 0px;
-      }
-    }
-  }
-}
+

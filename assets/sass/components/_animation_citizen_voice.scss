@@ -1,0 +1,132 @@
+#home {
+#citizenvoice{
+
+#triangle-green {
+  position:absolute;
+  bottom: -30px;
+  right:10px;
+  height: 20px;
+  width: 20px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-top: 15px solid #65D565;
+}
+.text-line{
+  height:1px;
+  border-top:2px solid #DCDCDC;
+  border-bottom: 2px solid #DCDCDC;
+  border-radius: 2px;
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+.text-last-line{
+  width:70%;
+  z-index: 99;
+}
+#post-title{
+  border-top:3px solid #65D565;
+  border-bottom: 3px solid #65D565;
+  width: 75%;
+  margin-bottom: 15px;
+}
+.text-block{
+  height:75%;
+  width:75%;
+}
+
+#triangle-white {
+  position: absolute;
+  bottom: -25px;
+  right: 10px;
+  height: 20px;
+  width: 20px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-top: 15px solid white;
+}
+.dynamic-speech-bubble {
+  flex-direction: column;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:absolute;
+  z-index: 99;
+  width:70px;
+  height:43px;
+  border: 3px solid #65D565;
+  border-radius: 6px;
+  background-color: white;
+  // opacity:0;
+}
+#speech-bubble-1{
+  bottom:150px;
+  left:150px;
+}
+#speech-bubble-2{
+  bottom:210px;
+  left:490px;
+}
+#speech-bubble-3{
+  bottom:140px;
+  right:200px;
+}
+#reply-speech-bubble{
+  bottom:-60px;
+  width: 120px;
+  left:0px;
+    #reply-avi{
+      position:absolute;
+      width:30px;
+      bottom:-10px;
+      right:-40px;
+    }
+}
+#speech-bubble-1-alt {
+  left:210px;
+  bottom:370;
+  width:160px;
+  height:183;
+  padding:10px 5px;
+    span {
+      color:#65D565;
+      font-size: 24px;
+    }
+    img {
+      width:20px;
+      margin-bottom: 9px;
+    }
+    #post-tags{
+    }
+    #post-paragraph-end{
+      margin-bottom: 15px;
+    }
+}
+
+.animate-in-1 {
+  animation-name: enter;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity:0;
+}
+.animate-in-2 {
+  animation-name: enter;
+  animation-duration: 2s;
+  animation-delay: 2.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes enter {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+}
+}

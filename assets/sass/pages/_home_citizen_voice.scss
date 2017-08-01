@@ -1,0 +1,25 @@
+#home {
+  #citizenvoice {
+    #role h4, #year h4, #platform h4, #period {
+      color:#65D565;
+    }
+    #cv-background-front{
+      position:absolute;
+      bottom:-5vh;
+      margin-left: -5vw;
+      width:105vw;
+    }
+    #cv-background-back{
+      position:absolute;
+      bottom:0vh;
+      margin-left: -5vw;
+      width:100vw;
+      opacity: 0.2;
+      transform: scaleX(-1);
+    }
+    #role {
+      padding-left: 0px;
+    }
+  }
+}
+

@@ -1,0 +1,31 @@
+#home {
+  #landing{
+    display: flex;
+    align-items: center;
+    padding-top: 10vh;
+
+    h1{
+      z-index: 99;
+      width:60%;
+      margin: auto;
+      font-size: 48px;
+      font-family: 'futura-pt-bold';
+      #design{
+        display:inline-block;
+        position:relative;
+        width:auto;
+        img{
+          height:52px;
+        }
+      }
+      #border-cover{
+        position:absolute;
+        border: 3px solid white;
+        left:0;
+        right:0;
+        top: 0px;
+        bottom: 0px;
+      }
+    }
+  }
+}

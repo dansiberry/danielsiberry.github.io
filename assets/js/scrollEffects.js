@@ -55,4 +55,6 @@ window.domLoaded = function domLoaded() {
     }
   }
 
+  pageDown();
+
 }
