@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="110px" height="110px" viewBox="0 0 110 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Copy-8" transform="translate(-185.000000, -163.000000)">
+            <g id="Group-3" transform="translate(186.000000, 164.000000)">
+                <circle id="Oval-2-Copy" stroke="#EEEEEE" stroke-width="2" stroke-dasharray="9,8" cx="53.6751595" cy="53.8275032" r="53.6749992"></circle>
+                <ellipse id="Oval-2-Copy-2" stroke="#EEEEEE" stroke-width="3" stroke-dasharray="24,8" cx="54.097174" cy="55.1715393" rx="45.3656242" ry="45.3656242"></ellipse>
+                <path d="M77.4788513,51.7750309 C80.0424977,53.4457148 80.0333612,56.1603826 77.4788513,57.8251125 L45.243731,78.8321816 C42.6800846,80.5028655 40.6018386,79.3735955 40.6018386,76.2951297 L40.6018386,33.3050137 C40.6018386,30.2331547 42.689221,29.1032319 45.243731,30.7679617 L77.4788513,51.7750309 Z" id="Triangle-3" fill="#D0F3D0"></path>
+            </g>
+        </g>
+    </g>
+</svg>

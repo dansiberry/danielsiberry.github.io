@@ -3,7 +3,7 @@
     <title>My website</title>
       <script src="assets/dist/bundle.js"></script>
   </head>
-  <body id="home" onload="window.domLoaded()">
+  <body id="home" onload="window.domLoaded(), window.animationScripts()">
       <div id="arrow-prompt">
         <p><span>&larr;</span> Projects</p>
       </div>
@@ -270,40 +270,84 @@
         </svg>
       </div>
     </div>
+    <div id="citizenvoice" class="layer-2 scroll-page to-be-viewed">
+<!--       <h1 style= "visibility: hidden;">HIDE</h1>
+      <h1>Citizen Voice</h1>
+      <p style= "visibility: hidden;">This is the type all about the project. It was a lot of fun and we had three members on the team, myself, Erin and Andreas.</p> -->
+    </div>
     <div id="citizenvoice" class="layer-1 scroll-page to-be-viewed container">
-      <div class="dynamic-speech-bubble animate-grow-box" id="speech-bubble-1">
-        <div class="text-block">
-          <div class="text-line"></div>
-          <div class="text-line"></div>
-<!--           <div class="text-line animate-post-content"></div>
- -->          <div class="text-line text-last-line"></div>
-        </div>
-<!--         <div id="post-paragraph-end" class="text-line animate-post-content text-last-line">
-        </div> -->
-        <span id="post-tag" class="animate-post-content">@</span>
-        <img id="tagged-avi" class="animate-post-content" src="assets/dist/images/avi.png" alt="">
-        <div id="triangle-green" class="animate-pointer"></div>
-        <div id="triangle-white" class="animate-pointer"></div>
-      </div>
-      <div class="dynamic-speech-bubble animate-speech-bubble" id="speech-bubble-2">
+      <div class="dynamic-speech-bubble animated animate-grow-box" id="speech-bubble-1">
         <div class="text-block">
           <div class="text-line"></div>
           <div class="text-line"></div>
           <div class="text-line text-last-line"></div>
         </div>
-        <div id="triangle-green"></div>
-        <div id="triangle-white"></div>
+        <div class="text-block animated animate-post-content">
+          <div class="text-line"></div>
+          <div class="text-line"></div>
+          <div class="text-line"></div>
+        </div>
+        <div class="text-block animated animate-post-content">
+          <div class="text-line"></div>
+          <div class="text-line text-last-line"></div>
+        </div>
+        <span id="post-tag" class="animate-post-content animated">@</span>
+        <img id="tagged-avi" class="animate-post-content animated" src="assets/dist/images/avi.png" alt="">
+        <div id="triangle-green" class="animate-pointer animated"></div>
+        <div id="triangle-white" class="animate-pointer animated"></div>
       </div>
-      <div class="dynamic-speech-bubble animate-speech-bubble" id="speech-bubble-3">
+      <div class="dynamic-speech-bubble animate-speech-bubble animated" id="speech-bubble-2">
         <div class="text-block">
           <div class="text-line"></div>
           <div class="text-line"></div>
           <div class="text-line text-last-line"></div>
         </div>
+        <p class="animated animate-votes">+1</p>
         <div id="triangle-green"></div>
         <div id="triangle-white"></div>
       </div>
-<!--  <div id="speech-bubble-grow-test" class="dynamic-speech-bubble">
+      <div class="dynamic-speech-bubble animate-speech-bubble animated" id="speech-bubble-3">
+        <div class="text-block">
+          <div class="text-line"></div>
+          <div class="text-line"></div>
+          <div class="text-line text-last-line"></div>
+        </div>
+        <p class="animated animate-votes">+1</p>
+        <div id="triangle-green"></div>
+        <div id="triangle-white"></div>
+      </div>
+      <a href="" onClick="window.startAnimation(event)" style="position:absolute; width:300px height:300px ">
+        <div id="play-button">
+          <svg width="170px" height="170px" viewBox="0 0 110 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+              <title>Group 3</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Desktop-Copy-8" transform="translate(-185.000000, -163.000000)">
+                      <g id="Group-3" transform="translate(186.000000, 164.000000)">
+                          <circle id="play-stroked-path" stroke="#EEEEEE" stroke-width="2" stroke-dasharray="9,8" cx="54.1751595" cy="54.8275032" r="53.6749992"></circle>
+                          <ellipse id="play-solid-path" stroke="#EEEEEE" stroke-width="3" stroke-dasharray="24,8" cx="54.097174" cy="55.1715393" rx="45.3656242" ry="45.3656242"></ellipse>
+                          <path d="M77.4788513,51.7750309 C80.0424977,53.4457148 80.0333612,56.1603826 77.4788513,57.8251125 L45.243731,78.8321816 C42.6800846,80.5028655 40.6018386,79.3735955 40.6018386,76.2951297 L40.6018386,33.3050137 C40.6018386,30.2331547 42.689221,29.1032319 45.243731,30.7679617 L77.4788513,51.7750309 Z" id="Triangle-3" fill="#D0F3D0"></path>
+                      </g>
+                  </g>
+              </g>
+          </svg>
+          <h3>What is Citizen Voice?</h3>
+        </div>
+      </a>
+      <div id="flash-titles-container">
+        <div id="flash-titles-view-box" class="animated">
+          <h2 id="title-control" class="animated">Search issues raised by residents in your local area<span>.</span></h2>
+          <h2>Raise your own issue and tag your local representatives <span>.</span></h2>
+          <h2 id="end-animation" class="animated">Compare public responses from your local representatives<span>.</span></h2>
+        </div>
+        <div id="Last-title" class="animated">
+          <h2>Up-vote and share the issues that you support<span>.</span></h2>
+        </div>
+      </div>
+<!--       <h2>Up-vote and share issues to show support<span>.</span></h2>
+ --><!--  <div id="speech-bubble-grow-test" class="dynamic-speech-bubble">
         <div class="text-block">
           <div class="text-line" id="post-title"></div>
           <div class="text-line"></div>
@@ -326,11 +370,19 @@
           <img id="reply-avi" src="assets/dist/images/avi.png" alt="">
         </div>
       </div> -->
+      <div id="reply-speech-bubble" class="animated reply-animate dynamic-speech-bubble">
+        <div class="text-block animated reply-animate">
+          <div class="text-line animated reply-animate"></div>
+          <div class="text-line animated reply-animate"></div>
+          <div class="text-line text-last-line animated reply-animate"></div>
+        </div>
+        <img id="reply-avi" class="animated reply-animate" src="assets/dist/images/avi.png" alt="">
+      </div>
       <img id="cv-background-back" src="assets/dist/images/cv-background-back.svg" alt="">
       <img id="cv-background-front" src="assets/dist/images/cv-background.svg" alt="">
       <div class="col-sm-6" style= "">
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-6 animated" id="citizen-voice-main-text">
         <h1>01<span id="period">.</span></h1>
         <h1>Citizen Voice</h1>
         <p>This is the type all about the project. It was a lot of fun and we had three members on the team, myself, Erin and Andreas.</p>
@@ -348,11 +400,6 @@
         </div>
         <button id="cv-button" class="view-project">View Project</button>
       </div>
-    </div>
-    <div id="citizenvoice" class="layer-2 scroll-page to-be-viewed">
-<!--       <h1 style= "visibility: hidden;">HIDE</h1>
-      <h1>Citizen Voice</h1>
-      <p style= "visibility: hidden;">This is the type all about the project. It was a lot of fun and we had three members on the team, myself, Erin and Andreas.</p> -->
     </div>
     <div id="link-cloud" class="layer-1 scroll-page to-be-viewed">
       <h1 style = "visibility: hidden">02.</h1>
