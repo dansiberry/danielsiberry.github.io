@@ -1,14 +1,25 @@
 window.animationScripts = function animation() {
-  // let playGraphic = document.getElementById("play-button")
-  // playGraphic.addEventListener("click", startAnimation)
 
  window.startAnimation = function startAnimation(e) {
     e.preventDefault()
     let animatedElements = document.getElementsByClassName("animated")
     let playButton = document.getElementById("play-button")
-    playButton.classList.add("custom-hidden")
     for(let i = 0; i < animatedElements.length; i ++) {
       animatedElements[i].classList.add("play-animation")
     }
+    setTimeout(window.reset, 20000)
   }
+
+  window.reset = function resetAnimation() {
+      let els = document.getElementsByClassName("animated")
+      for(let i = 0; i < els.length ; i++) {
+          els[i].classList.remove("play-animation")
+          els[i].style.animation= "none"
+          setTimeout(function() {
+            els[i].style.animation = '';
+          }, 10);
+      }
+  }
+
 }
+

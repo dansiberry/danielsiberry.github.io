@@ -1,0 +1,136 @@
+#flash-titles-container {
+  margin-top: -50px;
+  position:absolute;
+  padding-top: 100px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+#flash-titles-view-box {
+  padding-top: 20px;
+  width:600px;
+  height:300px;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 0px;
+  opacity:0;
+  animation: $animation-length linear 0s 1 normal none paused titleOpacityPop;
+  h2 {
+    padding-bottom: 400px;
+    font-family: 'museo-sans';
+    height:0px;
+    margin:0px;
+    color:#4E4E4E;
+    font-size: 34px;
+  }
+  span {
+    color: $cit-green;
+  }
+  #title-control{
+    animation: $animation-length linear 0s 1 normal none paused titleSlide;
+  }
+
+  @keyframes titleSlide {
+    0% {
+      margin-top: 0px;
+    }
+    22%{
+      margin-top: 0px;
+    }
+    23%{
+      margin-top: -400px;
+    }
+    45%{
+      margin-top: -400px;
+    }
+    46% {
+      margin-top: -800px;
+    }
+    69% {
+      margin-top: -800px;
+    }
+    70% {
+      margin-top: -1200px;
+    }
+    100% {
+      margin-top: -1200px;
+    }
+  }
+
+  @keyframes titleOpacityPop {
+    0% {
+      opacity:0;
+    }
+    4%{
+      opacity:0;
+      transform:scale(1.2, 1.2);
+    }
+    6%{
+      opacity:1;
+      transform:scale(1.1,1.1);
+    }
+    19%{
+      opacity:1;
+      transform:scale(1.1,1.1);
+    }
+    21%{
+      opacity: 0;
+      transform:scale(1.2, 1.2);
+     }
+    25% {
+     opacity:0;
+     transform:scale(1.2, 1.2);
+    }
+    27%{
+     opacity:1;
+     transform:scale(1.1,1.1);
+    }
+    40%{
+     opacity:1;
+     transform:scale(1.1,1.1);
+    }
+    42%{
+     opacity:0;
+     transform:scale(1.2, 1.2);
+    }
+    46% {
+     opacity:0;
+     transform:scale(1.2, 1.2);
+    }
+    48% {
+     opacity:1;
+     transform:scale(1.1,1.1);
+    }
+    64%{
+      opacity:1;
+      transform:scale(1.1,1.1);
+    }
+    66%{
+      opacity:0;
+      transform:scale(1.2, 1.2);
+    }
+    70%{
+      opacity:0;
+      transform:scale(1.2, 1.2);
+    }
+    72%{
+      opacity:1;
+      transform:scale(1.1,1.1);
+    }
+    90%{
+      opacity:1
+    }
+    92%{
+      opacity:0;
+    }
+    100% {
+      opacity:0;
+      transform:scale(1.1,1.1)
+    }
+  }
+}

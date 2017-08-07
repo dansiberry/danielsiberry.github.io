@@ -12,11 +12,11 @@
   border-top: 12px solid $half-cit-green;
 }
 #triangle-white {
-  transform: skew(22deg);
+  transform: skew(0deg);
   position: absolute;
-  bottom: -23px;
-  right: 11px;
-  border-left: 10px solid transparent;
+  bottom: -12px;
+  right: -10px;
+  border-left: 9px solid transparent;
   border-right: 10px solid transparent;
   border-bottom: 15px solid transparent;
   border-top: 12px solid white;
@@ -64,238 +64,55 @@
    display:flex;
    align-items:center;
    flex-direction:column;
+   animation: $animation-length linear 0s 1 normal none paused hideShowPlayButton;
      h3 {
       font-family: 'museo-sans';
       color:$half-cit-green;
      }
 }
-#end-animation{
-      animation: 1s linear $animation-length + 2s 1 normal forwards paused hideTitles;
-      opacity:1;
-      transform-origin: 50% 0%;
-        @keyframes hideTitles {
-          0% {
-            opacity:1;
-          }
-          60% {
-            opacity:1;
-            transform:scale(1, 1)
-          }
-          100%{
-            opacity:0;
-            transform:scale(1.2, 1.2);
-          }
-        }
-}
-#flash-titles-container {
-  margin-top: -50px;
-  position:absolute;
-  padding-top: 100px;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-    #faze-animate{
-      animation: $animation-length linear 1s 1 normal forwards paused popTitles;
-      transform-origin: 50% 0%;
-    }
-    #last-title{
-      h2 {
-        font-family: 'museo-sans';
-        height:0px;
-        margin:0px;
-        color:#4E4E4E;
-        font-size: 34px;
-      }
-      width:500px;
-      position:absolute;
-      height:300px;
-      overflow: hidden;
-      text-align: center;
-      transform-origin: 50% 0%;
-      animation: 4s linear $animation-length + 3s 1 normal forwards paused showLastTitle;
-      opacity:0;
-
-    }
-    @keyframes showLastTitle {
-            0% {
-              opacity:0;
-              transform:scale(1.4,1.4)
-            }
-            15%{
-              opacity:0;
-              transform:scale(1.4,1.4)
-            }
-            25%{
-              opacity:1;
-              transform:scale(1 ,1)
-            }
-            85%{
-              opacity:1;
-              transform:scale(1,1)
-            }
-            88%{
-              opacity:0;
-              transform:scale(1.2,1.2)
-            }
-            100%{
-              opacity:0;
-              transform:scale(1.2,1.2)
-            }
-            100%{
-              opacity:0;
-              transform:scale(1.2,1.2)
-            }
-    }
-    @keyframes popTitles {
-           0% {
-            transform:scale(1.2,1.2);
-           }
-           2%{
-            transform:scale(1 ,1)
-           }
-           36%{
-            transform:scale(1 ,1)
-           }
-           39%{
-            transform:scale(1.2 ,1.2)
-           }
-           43% {
-            transform:scale(1.2 ,1.2)
-           }
-           46%{
-            transform:scale(1 ,1)
-           }
-           77%{
-            transform:scale(1 ,1)
-           }
-           79%{
-            transform:scale(1.2 ,1.2)
-           }
-           87% {
-            transform:scale(1.2 ,1.2)
-           }
-           90% {
-            transform:scale(1 ,1)
-           }
-           100% {
-            transform:scale(1 ,1)
-           }
-        }
-
-    #flash-titles-view-box {
-      padding-top: 20px;
-      width:600px;
-      height:300px;
-      overflow: hidden;
-      text-align: center;
-      padding-top: 0px;
-      animation: $animation-length linear 1s 1 normal forwards paused showTitles;
-      opacity:0;
-        @keyframes showTitles {
-            0% {
-              opacity:0;
-            }
-            10%{
-              opacity:1;
-            }
-            35%{
-              opacity:1;
-            }
-            37%{
-              opacity: 0;
-             }
-           44% {
-            opacity:0;
-           }
-           50%{
-            opacity:1;
-           }
-           75%{
-            opacity:1;
-           }
-           80%{
-            opacity:0;
-           }
-           85% {
-            opacity:0;
-           }
-           90% {
-            opacity:1;
-           }
-           100% {
-            opacity:1;
-           }
-        }
-    h2 {
-      padding-bottom: 400px;
-      font-family: 'museo-sans';
-      height:0px;
-      margin:0px;
-      color:#4E4E4E;
-      font-size: 34px;
-    }
-    span {
-      color: $cit-green;
-    }
-    #title-control{
-      animation: $animation-length linear 1s 1 normal forwards paused titleSlide,
-                 $animation-length linear 1s 1 normal forwards paused popTitles;
-      transform-origin: 50% 0%;
-     }
-      @keyframes titleSlide {
-        0% {
-          margin-top: 0px;
-        }
-        38%{
-          margin-top: 0px;
-        }
-        39%{
-          margin-top: -400px;
-        }
-        83%{
-          margin-top: -400px;
-        }
-        84% {
-          margin-top: -800px;
-        }
-        100% {
-          margin-top: -800px;
-        }
-      }
+@keyframes hideShowPlayButton {
+  0% {
+    opacity:1;
+  }
+  2%{
+    opacity:0;
+  }
+  98% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
   }
 }
 
 #citizen-voice-main-text{
-  animation: $animation-length + 8s linear 0s 1 normal forwards paused hideShow;
+  animation: $animation-length linear 0s 1 normal none paused hideShow;
 }
 @keyframes hideShow {
   0% {
     opacity:1;
   }
-  5%{
+  4%{
     opacity:0;
   }
   95% {
     opacity:0;
   }
-  100%{
+  100% {
     opacity:1;
   }
 }
 
 .play-animation {
   animation-play-state: running !important;
+  transition: opacity 1s
 }
 #play-stroked-path{
-  animation: 20s linear 0s 1 normal forwards running spinCounterClockwise;
+  animation: 20s linear 0s infinite normal forwards running spinCounterClockwise;
   transform-origin:50% 50%;
 }
 #play-solid-path{
-  animation: 23s linear 0s 1 normal forwards running spinClockwise;
+  animation: 23s linear 0s infinite normal forwards running spinClockwise;
   transform-origin:50% 50%;
 }
 @keyframes spinCounterClockwise {
@@ -347,10 +164,208 @@
   animation-delay:$delay + 1.2s;
 }
 
+#post-paragraph-end{
+  margin-bottom: 15px;
+}
+
+.animate-speech-bubble {
+  animation: $animation-length linear 0s 1 normal forwards paused animate-speech-bubble;
+  opacity:0;
+}
+@keyframes animate-speech-bubble {
+  0% {
+    opacity: 0;
+    transform:scale(1, 1);
+  }
+  2%{
+    transform:scale(1, 1);
+    opacity:0;
+  }
+  3% {
+    transform:scale(1.5,1.5);
+  }
+  4%{
+    transform:scale(1.1, 1.1);
+    opacity: 1;
+  }
+  82%{
+    opacity:1
+  }
+  84%{
+    opacity:0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#animated-votes-1{
+  animation-delay: 0.5s;
+}
+.animate-votes {
+  opacity:0;
+  animation: $animation-length linear 0s 1 normal forwards paused popVotes,
+             $animation-length linear 0s 1 normal forwards paused showVotes;
+  @keyframes popVotes {
+    0% {
+      font-size: 25px;
+    }
+    75%{
+      font-size: 25px;
+    }
+    76%{
+      font-size: 33px;
+    }
+    77%{
+      font-size: 25px;
+    }
+    100%{
+      font-size: 25px;
+    }
+  }
+  @keyframes showVotes {
+    0% {
+      opacity:0;
+    }
+    74%{
+      opacity:0;
+    }
+    77%{
+      opacity:1;
+    }
+    90%{
+      opacity:1
+    }
+    92%{
+      opacity:0;
+    }
+    100%{
+      opacity:0;
+    }
+  }
+}
+
+
+.animate-grow-box {
+  animation: $animation-length linear 1 normal forwards paused animate-grow-box;
+  opacity:0;
+  transform:scale(1.2, 1.2);
+}
+@keyframes animate-grow-box {
+  0% {
+    opacity: 0;
+    transform:scale(1, 1);
+  }
+  4%{
+    opacity: 0;
+    transform:scale(1, 1);
+  }
+  6%{
+    transform:scale(1, 1);
+    opacity:0;
+  }
+  7% {
+    transform:scale(1.5,1.5);
+  }
+  8%{
+    transform:scale(1.1, 1.1);
+    opacity: 1;
+  }
+  9%{
+    opacity:1;
+  }
+  17%{
+    opacity:1;
+    padding:0;
+  }
+  26%{
+    bottom:150px;
+    left:150px;
+    width:70px;
+    height:43px;
+    padding:0px;
+  }
+  28% {
+    left:160px;
+    bottom:150;
+    width:150px;
+    height:175px;
+    opacity:1;
+    padding:20px 10px;
+  }
+  45% {
+    left:160px;
+    bottom:150;
+    width:150px;
+    height:175px;
+    padding:20px 10px;
+  }
+  49% {
+    left:190px;
+    bottom:310;
+    width:150px;
+    height:175px;
+    opacity:1;
+    padding:20px 10px;
+  }
+  50% {
+    left:190px;
+    bottom:310;
+    width:150px;
+    height:175px;
+    opacity:1;
+    padding:20px 10px;
+  }
+  90%{
+    opacity:1
+  }
+  92%{
+    opacity:0;
+  }
+  100% {
+    left:190px;
+    bottom:310;
+    width:150px;
+    height:175px;
+    opacity:0;
+    padding:20px 10px;
+  }
+}
+
+#triangle-green.animate-pointer{
+  animation: $animation-length linear 0s 1 normal forwards paused triangleGreen;
+  opacity:0;
+}
+@keyframes triangleGreen {
+  0%{
+    right: 10px;
+  }
+  5%{
+    opacity:1;
+  }
+  26%{
+    right: 10px;
+  }
+  28%{
+   opacity:1;
+   right:100px;
+  }
+  43%{
+    opacity:1;
+  }
+  48%{
+    opacity:0;
+    right:100px;
+  }
+  100%{
+    opacity:0;
+    right:100px;
+  }
+}
+
 span#post-tag {
   color:$cit-green;
-  font-size: 24px;
-  bottom:20px;
+  font-size: 20px;
+  bottom:17px;
   left:30px;
   max-width: 30px !important;
   max-height: 30px !important;
@@ -363,196 +378,64 @@ img#tagged-avi {
   left:50px;
   position:absolute;
 }
-
-#post-paragraph-end{
-  margin-bottom: 15px;
+.post-tag-2{
+ left:80px !important;
+ animation-delay:1s !important;
 }
-
-.animate-speech-bubble {
-  animation: $animation-length linear $delay 1 normal forwards paused animate-speech-bubble;
+.tagged-avi-2{
+ left:90px !important;
+ animation-delay:1s !important;
+}
+.animate-post-tag {
+  animation: $animation-length linear 0s 1 normal forwards paused postTag;
   opacity:0;
+  width:30px;
+  height:75%;
 }
-@keyframes animate-speech-bubble {
-  0% {
-    opacity: 0;
-    transform:scale(1, 1);
-  }
-  4%{
-    transform:scale(1, 1);
+@keyframes postTag {
+  31% {
     opacity:0;
+    height:30px;
+    width:75%;
+    transform:scale(1, 1)
   }
-  5% {
-    transform:scale(1.5,1.5);
-  }
-  6%{
-    transform:scale(1.1, 1.1);
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-#animated-votes-1{
-  animation: 0.2s linear $animation-length + 4.5s 1 normal forwards paused popVotes,
-             2s linear $animation-length + 3.5s 1 normal forwards paused showVotes;
-}
-.animate-votes {
-  opacity:0;
-
-  animation: 0.2s linear $animation-length + 4s 1 normal forwards paused popVotes,
-             2s linear $animation-length + 3s 1 normal forwards paused showVotes;
-  @keyframes popVotes {
-    0% {
-      font-size: 25px;
-    }
-    50%{
-      font-size: 33px;
-    }
-    100%{
-      font-size: 25px;
-    }
-  }
-  @keyframes showVotes {
-    0% {
-      opacity:0;
-    }
-    50%{
-      opacity:0;
-    }
-    60%{
-      opacity:1;
-    }
-    100%{
-      opacity:1;
-    }
-  }
-}
-
-
-.animate-grow-box {
-  animation: $animation-length linear $delay 1 normal forwards paused animate-grow-box;
-  opacity:0;
-  transform:scale(1.2, 1.2);
-}
-@keyframes animate-grow-box {
-  0% {
-    opacity: 0;
-    transform:scale(1, 1);
-  }
-  4%{
-    transform:scale(1, 1);
-    opacity:0;
-  }
-  5% {
-    transform:scale(1.5,1.5);
-  }
-  6%{
-    transform:scale(1.1, 1.1);
-    opacity: 1;
-  }
-  10%{
-    opacity:1;
-  }
-  34%{
-    opacity:1;
-    padding:0;
-  }
-  44%{
-    bottom:150px;
-    left:150px;
-    width:70px;
-    height:43px;
-    padding:0px;
-  }
-  48% {
-    left:160px;
-    bottom:150;
-    width:150px;
-    height:175px;
-    opacity:1;
-    padding:20px 10px;
-  }
-  90% {
-    left:160px;
-    bottom:150;
-    width:150px;
-    height:175px;
-    padding:20px 10px;
-  }
-  98% {
-    left:190px;
-    bottom:310;
-    width:150px;
-    height:175px;
-    opacity:1;
-    padding:20px 10px;
-  }
-  100% {
-    left:190px;
-    bottom:310;
-    width:150px;
-    height:175px;
-    opacity:1;
-    padding:20px 10px;
-  }
-}
-
-#triangle-green.animate-pointer{
-  animation: $animation-length linear $delay 1 normal forwards paused triangleGreen;
-}
-@keyframes triangleGreen {
-  0%{
-    right: 10px;
-  }
-  44%{
-    right: 10px;
-  }
-  48%{
+  32% {
+   transform:scale(1.3, 1.3);
    opacity:1;
-   right:100px;
+   width:75%;
+   height:30px;
   }
-  90%{
-    opacity:1;
+  33%{
+    transform:scale(1, 1)
   }
-  100%{
-    opacity:0;
-    right:100px;
+  50% {
+   opacity:1;
+   width:75%;
+   height:30px;
   }
-}
-#triangle-white.animate-pointer {
-  animation: $animation-length linear $delay 1 normal forwards paused triangleWhite;
-}
-@keyframes triangleWhite {
-  0%{
-    opacity:1;
-    right: 11px;
-  }
-  44%{
-    right:11px;
-  }
-  48% {
-   right:101px;
-  }
-  90%{
-    opacity:1;
-  }
-  100%{
-    opacity:0;
-    right:101px;
+  100% {
+   opacity:1;
+   width:75%;
+   height:30px;
   }
 }
 
 .animate-post-content {
-  animation: $animation-length linear $delay 1 normal forwards paused postContent;
+  animation: $animation-length linear 0s 1 normal forwards paused postContent;
   opacity:0;
   width:0px;
   height:0px;
 }
 @keyframes postContent {
-  46% {
+  26% {
     opacity:0;
     height:0px;
     width:0px;
+  }
+  28% {
+   opacity:1;
+   width:75%;
+   height:30px;
   }
   50% {
    opacity:1;
@@ -610,22 +493,32 @@ img#tagged-avi {
 .reply-animate{
   animation-play-state: paused;
   opacity:0;
-  animation: $animation-length linear $delay + 0.2s 1 normal forwards paused replyBubble;
+  animation: $animation-length linear $delay + 0.2s 1 normal none paused replyBubble;
 }
 
 @keyframes replyBubble {
-  95% {
+  47% {
     opacity:0;
     transform:scale(1, 1)
   }
-  97%{
+  48%{
     transform:scale(1.2, 1.2)
   }
-  98%{
+  49%{
     transform:scale(1, 1)
   }
-  100%{
+  50%{
     opacity:1;
+    transform:scale(1, 1)
+  }
+  82%{
+    opacity:1
+  }
+  84%{
+    opacity:0;
+  }
+  100%{
+    opacity:0;
     transform:scale(1, 1)
   }
 }
