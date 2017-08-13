@@ -3,22 +3,150 @@
     <title>My website</title>
       <script src="assets/dist/bundle.js"></script>
   </head>
+
+  <input style="display:none" type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" id="burger-button">
+    <div class="menu-collapsed" id="menu-expanded">
+       <div id="circle-container">
+         <div class="bar"></div>
+       </div>
+       <nav>
+          <ul>
+             <li><a href="#">Home</a></li>
+             <li><a href="#">About</a></li>
+             <li><a href="#">Clients</a></li>
+             <li><a href="#">Contact Us</a></li>
+          </ul>
+       </nav>
+   </div>
+<!--    <div id="menu-shadow">
+     <div id="stripes"></div>
+   </div> -->
+  </label>
+
+
   <body id="home" onload="window.domLoaded(), window.animationScripts()">
       <div id="arrow-prompt">
         <p><span>&larr;</span> Projects</p>
       </div>
-    <button id="page-down">page down</button>
-    <button id="page-up">page up</button>
+<!--     <button id="page-down">page down</button>
+    <button id="page-up">page up</button> -->
     <div id="landing" class="layer-1 scroll-page in-view">
       <h1>Hello. I'm Dan, I like to
-        <span class = "shape" id = "design">
+        <span class = "grad-animate word-cutout">
           <img src="./assets/dist/images/design.svg" alt="">
           <span id="border-cover"></span>
         </span>
-        and develop for the web.
+        and
+        <span class = "grad-animate word-cutout">
+          <img src="./assets/dist/images/develop-cutout.svg" alt="">
+          <span id="border-cover"></span>
+        </span>
+        for the web.
       </h1>
-      <div class = "svg-shape" id = "circle">
-        <svg viewBox="0 0 446 446" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+      <div class = "shape" id = "triangle-1">
+        <svg width="100%" height="100%" viewBox="0 0 60 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <linearGradient id="Gradient1">
+              <stop class="stop1" offset="0%"/>
+              <stop class="stop2" offset="50%"/>
+              <stop class="stop3" offset="100%"/>
+            </linearGradient>
+            <style type="text/css" class="svg-style"><![CDATA[
+              #fff { fill: url(#Gradient1); }
+              .stop1 { stop-color: white; }
+              .stop2 { stop-color: white; stop-opacity: 0; }
+              .stop3 { stop-color: white; }
+            ]]>
+            </style>
+          </defs>
+            <g id="svgaef-circ" transform="translate(-62.000000, -294.000000)" stroke-width="10" stroke="url(#Gradient1)">
+              <polygon id="" fill="none" transform="translate(94.292034, 327.292034) rotate(5.000000) translate(-94.292034, -327.292034) " points="94.2920345 305.792034 115.792034 348.792034 72.7920345 348.792034"></polygon>
+            </g>
+        </svg>
+      </div>
+
+      <div class = "shape" id = "cross-1">
+        <svg width="100%" height="100%" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <linearGradient id="Gradient1">
+              <stop class="stop1" offset="0%"/>
+              <stop class="stop2" offset="50%"/>
+              <stop class="stop3" offset="100%"/>
+            </linearGradient>
+            <style type="text/css" class="svg-style"><![CDATA[
+              #fff { fill: url(#Gradient1); }
+              .stop1 { stop-color: white; }
+              .stop2 { stop-color: white; stop-opacity: 0; }
+              .stop3 { stop-color: white; }
+            ]]>
+            </style>
+          </defs>
+          <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Desktop-Copy-7" transform="translate(-675.000000, -130.000000)" fill="url(#Gradient1)">
+                  <path d="M687.785464,136.693287 L682.210424,131.118248 C681.040549,129.948372 679.140274,129.951903 677.969981,131.122195 L676.122195,132.969981 C674.950139,134.142038 674.950629,136.042806 676.118248,137.210424 L681.693287,142.785464 L676.118248,148.360504 C674.950629,149.528122 674.950139,151.428891 676.122195,152.600947 L677.969981,154.448733 C679.140274,155.619026 681.040549,155.622556 682.210424,154.452681 L687.785464,148.877641 L693.360504,154.452681 C694.53038,155.622556 696.430654,155.619026 697.600947,154.448733 L699.448733,152.600947 C700.620789,151.428891 700.620299,149.528122 699.452681,148.360504 L693.877641,142.785464 L699.452681,137.210424 C700.620299,136.042806 700.620789,134.142038 699.448733,132.969981 L697.600947,131.122195 C696.430654,129.951903 694.53038,129.948372 693.360504,131.118248 L687.785464,136.693287 Z" id="Combined-Shape"></path>
+              </g>
+          </g>
+        </svg>
+      </div>
+
+
+      <div class = "shape" id = "cross-2">
+        <svg width="100%" height="100%" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <linearGradient id="Gradient1">
+              <stop class="stop1" offset="0%"/>
+              <stop class="stop2" offset="50%"/>
+              <stop class="stop3" offset="100%"/>
+            </linearGradient>
+            <style type="text/css" class="svg-style"><![CDATA[
+              #fff { fill: url(#Gradient1); }
+              .stop1 { stop-color: white; }
+              .stop2 { stop-color: white; stop-opacity: 0; }
+              .stop3 { stop-color: white; }
+            ]]>
+            </style>
+          </defs>
+          <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Desktop-Copy-7" transform="translate(-675.000000, -130.000000)" fill="url(#Gradient1)">
+                  <path d="M687.785464,136.693287 L682.210424,131.118248 C681.040549,129.948372 679.140274,129.951903 677.969981,131.122195 L676.122195,132.969981 C674.950139,134.142038 674.950629,136.042806 676.118248,137.210424 L681.693287,142.785464 L676.118248,148.360504 C674.950629,149.528122 674.950139,151.428891 676.122195,152.600947 L677.969981,154.448733 C679.140274,155.619026 681.040549,155.622556 682.210424,154.452681 L687.785464,148.877641 L693.360504,154.452681 C694.53038,155.622556 696.430654,155.619026 697.600947,154.448733 L699.448733,152.600947 C700.620789,151.428891 700.620299,149.528122 699.452681,148.360504 L693.877641,142.785464 L699.452681,137.210424 C700.620299,136.042806 700.620789,134.142038 699.448733,132.969981 L697.600947,131.122195 C696.430654,129.951903 694.53038,129.948372 693.360504,131.118248 L687.785464,136.693287 Z" id="Combined-Shape"></path>
+              </g>
+          </g>
+        </svg>
+      </div>
+
+      <div class = "shape" id = "wavy-line">
+        <defs>
+            <linearGradient id="Gradient1">
+              <stop class="stop1" offset="0%"/>
+              <stop class="stop2" offset="50%"/>
+              <stop class="stop3" offset="100%"/>
+            </linearGradient>
+            <style type="text/css" class="svg-style"><![CDATA[
+              #fff { fill: url(#Gradient1); }
+              .stop1 { stop-color: white; }
+              .stop2 { stop-color: white; stop-opacity: 0; }
+              .stop3 { stop-color: white; }
+            ]]>
+            </style>
+        </defs>
+        <svg>
+          <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+            <g id="Desktop-Copy-7" transform="translate(-139.000000, -189.000000)" stroke="url(#Gradient1)" stroke-width="10">
+                <path d="M144,194.64276 C144,194.64276 147.12854,201.232144 153.833008,200.531432 C160.537476,199.83072 162.460937,191.689635 170.786133,194.64276 C179.111328,197.595885 174.158203,205.211119 183.537109,208.542174 C192.916016,211.873229 192.384766,205.304869 200.832031,205.304869 C209.279297,205.304869 212.321289,214.001158 212.321289,214.001158" id="Line-Copy-5"></path>
+            </g>
+          </g>
+        </svg>
+      </div>
+
+<!--       <div class = "shape grad-animate" id = "swing-circ">
+        <div id="inner-swing-circ">
+        </div>
+      </div> -->
+
+      <div class = "shape" id = "swing-circ">
+        <svg viewBox="-50 -50 550 550" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
               <linearGradient id="Gradient1">
                 <stop class="stop1" offset="0%"/>
@@ -27,255 +155,90 @@
               </linearGradient>
               <style type="text/css" class="svg-style"><![CDATA[
                 #Page-1 { fill: url(#Gradient1); }
-                .stop1 { stop-color: red; }
-                .stop2 { stop-color: black; stop-opacity: 0; }
-                .stop3 { stop-color: blue; }
+                .stop1 { stop-color: white; }
+                .stop2 { stop-color: white; stop-opacity: 0; }
+                .stop3 { stop-color: white; }
               ]]>
               </style>
           </defs>
             <ellipse />
             <path />
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Page-1" stroke="url(#Gradient1)" stroke-width="55" fill="none" fill-rule="evenodd">
                 <g id="svg-circ" transform="translate(-29.000000, -29.000000)" fill-rule="nonzero">
                     <path d="M252,475 C128.840501,475 29,375.159499 29,252 C29,128.840501 128.840501,29 252,29 C375.159499,29 475,128.840501 475,252 C475,375.159499 375.159499,475 252,475 Z M251.5,440 C355.605675,440 440,355.605675 440,251.5 C440,147.394325 355.605675,63 251.5,63 C147.394325,63 63,147.394325 63,251.5 C63,355.605675 147.394325,440 251.5,440 Z" id="Combined-Shape"></path>
                 </g>
             </g>
         </svg>
       </div>
-      <div class = "svg-shape" id = "square">
-        <svg viewBox="0 0 446 446" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <defs>
+
+      <div class = "shape" id = "semi-circle-1">
+        <svg width="100%" height="100%" viewBox="0 0 43 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
               <linearGradient id="Gradient1">
                 <stop class="stop1" offset="0%"/>
                 <stop class="stop2" offset="50%"/>
                 <stop class="stop3" offset="100%"/>
               </linearGradient>
               <style type="text/css" class="svg-style"><![CDATA[
-                #Page-1 { fill: url(#Gradient1); }
-                .stop1 { stop-color: red; }
-                .stop2 { stop-color: black; stop-opacity: 0; }
-                .stop3 { stop-color: blue; }
+                #fff { fill: url(#Gradient1); }
+                .stop1 { stop-color: white; }
+                .stop2 { stop-color: white; stop-opacity: 0; }
+                .stop3 { stop-color: white; }
               ]]>
               </style>
-          </defs>
-            <ellipse />
-            <path />
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="svg-circ" transform="translate(-29.000000, -29.000000)" fill-rule="nonzero">
-                    <path d="M252,475 C128.840501,475 29,375.159499 29,252 C29,128.840501 128.840501,29 252,29 C375.159499,29 475,128.840501 475,252 C475,375.159499 375.159499,475 252,475 Z M251.5,440 C355.605675,440 440,355.605675 440,251.5 C440,147.394325 355.605675,63 251.5,63 C147.394325,63 63,147.394325 63,251.5 C63,355.605675 147.394325,440 251.5,440 Z" id="Combined-Shape"></path>
-                </g>
-            </g>
-        </svg>
-      </div>
-      <div class = "svg-shape" id = "triangle">
-        <svg viewBox="0 0 446 446" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <defs>
-              <linearGradient id="Gradient1">
-                <stop class="stop1" offset="0%"/>
-                <stop class="stop2" offset="50%"/>
-                <stop class="stop3" offset="100%"/>
+              <linearGradient x1="0.25781251%" y1="49.7500002%" x2="101.257813%" y2="49.7500002%" id="linearGradient-1">
+                  <stop stop-color="#3023AE" offset="0%"></stop>
+                  <stop stop-color="#53A0FE" offset="47.5247532%"></stop>
+                  <stop stop-color="#B4EC51" offset="100%"></stop>
               </linearGradient>
-              <style type="text/css" class="svg-style"><![CDATA[
-                #Page-1 { fill: url(#Gradient1); }
-                .stop1 { stop-color: red; }
-                .stop2 { stop-color: black; stop-opacity: 0; }
-                .stop3 { stop-color: blue; }
-              ]]>
-              </style>
-          </defs>
-            <ellipse />
-            <path />
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="svg-circ" transform="translate(-29.000000, -29.000000)" fill-rule="nonzero">
-                    <path d="M252,475 C128.840501,475 29,375.159499 29,252 C29,128.840501 128.840501,29 252,29 C375.159499,29 475,128.840501 475,252 C475,375.159499 375.159499,475 252,475 Z M251.5,440 C355.605675,440 440,355.605675 440,251.5 C440,147.394325 355.605675,63 251.5,63 C147.394325,63 63,147.394325 63,251.5 C63,355.605675 147.394325,440 251.5,440 Z" id="Combined-Shape"></path>
+              <path d="M369.000001,130.698081 C369.256349,130.952597 369.526699,131.154652 369.810986,131.297873 C371.972428,132.386788 374.414603,133 377.000001,133 C385.836557,133 393.000001,125.836556 393.000001,117 C393.000001,108.163444 385.836557,101 377.000001,101 C374.085704,101 371.353387,101.779155 369,103.140516" id="path-2"></path>
+            </defs>
+            <g id="semi-circle-animation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Desktop-Copy-7" transform="translate(-364.000000, -94.000000)">
+                <g id="Combined-Shape">
+                  <use fill="none" fill-opacity="1" filter="" xlink:href="#path-2"></use>
+                  <use stroke="url(#Gradient1)" stroke-width="10" xlink:href="#path-2"></use>
                 </g>
+              </g>
             </g>
         </svg>
       </div>
-      <div class = "svg-shape" id = "polygon">
-        <svg viewBox="0 0 446 446" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <defs>
-              <linearGradient id="Gradient1">
-                <stop class="stop1" offset="0%"/>
-                <stop class="stop2" offset="50%"/>
-                <stop class="stop3" offset="100%"/>
-              </linearGradient>
-              <style type="text/css" class="svg-style"><![CDATA[
-                #Page-1 { fill: url(#Gradient1); }
-                .stop1 { stop-color: red; }
-                .stop2 { stop-color: black; stop-opacity: 0; }
-                .stop3 { stop-color: blue; }
-              ]]>
-              </style>
-          </defs>
-            <ellipse />
-            <path />
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="svg-circ" transform="translate(-29.000000, -29.000000)" fill-rule="nonzero">
-                    <path d="M252,475 C128.840501,475 29,375.159499 29,252 C29,128.840501 128.840501,29 252,29 C375.159499,29 475,128.840501 475,252 C475,375.159499 375.159499,475 252,475 Z M251.5,440 C355.605675,440 440,355.605675 440,251.5 C440,147.394325 355.605675,63 251.5,63 C147.394325,63 63,147.394325 63,251.5 C63,355.605675 147.394325,440 251.5,440 Z" id="Combined-Shape"></path>
-                </g>
-            </g>
-        </svg>
-      </div>
-      <div class = "svg-shape" id = "solid-large_circ">
-        <svg viewBox="0 0 446 446" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <defs>
-              <linearGradient id="Gradient1">
-                <stop class="stop1" offset="0%"/>
-                <stop class="stop2" offset="50%"/>
-                <stop class="stop3" offset="100%"/>
-              </linearGradient>
-              <style type="text/css" class="svg-style"><![CDATA[
-                #Page-1 { fill: url(#Gradient1); }
-                .stop1 { stop-color: red; }
-                .stop2 { stop-color: black; stop-opacity: 0; }
-                .stop3 { stop-color: blue; }
-              ]]>
-              </style>
-          </defs>
-            <ellipse />
-            <path />
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="svg-circ" transform="translate(-29.000000, -29.000000)" fill-rule="nonzero">
-                    <path d="M252,475 C128.840501,475 29,375.159499 29,252 C29,128.840501 128.840501,29 252,29 C375.159499,29 475,128.840501 475,252 C475,375.159499 375.159499,475 252,475 Z M251.5,440 C355.605675,440 440,355.605675 440,251.5 C440,147.394325 355.605675,63 251.5,63 C147.394325,63 63,147.394325 63,251.5 C63,355.605675 147.394325,440 251.5,440 Z" id="Combined-Shape"></path>
-                </g>
-            </g>
-        </svg>
-      </div>
+
+      <div class = "shape" id = "square-1">
+        <svg width="100%" height="100%" viewBox="0 -50 400 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs>
+                  <linearGradient id="Gradient1">
+                    <stop class="stop1" offset="0%"/>
+                    <stop class="stop2" offset="50%"/>
+                    <stop class="stop3" offset="100%"/>
+                  </linearGradient>
+                  <style type="text/css" class="svg-style"><![CDATA[
+                    #fff { fill: url(#Gradient1); }
+                    .stop1 { stop-color: white; }
+                    .stop2 { stop-color: white; stop-opacity: 0; }
+                    .stop3 { stop-color: white; }
+                  ]]>
+                  </style>
+                  <linearGradient x1="0.25781251%" y1="49.7500002%" x2="101.257813%" y2="49.7500002%" id="linearGradient-1">
+                      <stop stop-color="white" offset="0%"></stop>
+                      <stop stop-color="white" offset="47.5247532%"></stop>
+                      <stop stop-color="white" offset="100%"></stop>
+                  </linearGradient>
+                  <path d="M369.000001,130.698081 C369.256349,130.952597 369.526699,131.154652 369.810986,131.297873 C371.972428,132.386788 374.414603,133 377.000001,133 C385.836557,133 393.000001,125.836556 393.000001,117 C393.000001,108.163444 385.836557,101 377.000001,101 C374.085704,101 371.353387,101.779155 369,103.140516" id="path-2"></path>
+              </defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="triangle">
+                      <g id="Combined-Shape">
+                          <use fill="#8BCEE8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                          <path stroke="#979797" stroke-width="1" d="M0.5,0.5 L499.5,0.5 L499.5,499.5 L0.5,499.5 L0.5,0.5 Z M126.5,127 L126.5,373 L126.5,373.5 L127,373.5 L373,373.5 L373.5,373.5 L373.5,373 L373.5,127 L373.5,126.5 L373,126.5 L127,126.5 L126.5,126.5 L126.5,127 Z"></path>
+                      </g>
+                  </g>
+              </g>
+          </svg>
+        </div>
     </div>
-    <div id="landing" class="layer-2 scroll-page in-view">
-      <div class = "svg-shape" id = "solid-circle2">
-        <svg viewBox="0 0 446 446" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <defs>
-              <linearGradient id="Gradient1">
-                <stop class="stop1" offset="0%"/>
-                <stop class="stop2" offset="50%"/>
-                <stop class="stop3" offset="100%"/>
-              </linearGradient>
-              <style type="text/css" class="svg-style"><![CDATA[
-                #Page-1 { fill: url(#Gradient1); }
-                .stop1 { stop-color: red; }
-                .stop2 { stop-color: black; stop-opacity: 0; }
-                .stop3 { stop-color: blue; }
-              ]]>
-              </style>
-          </defs>
-            <ellipse />
-            <path />
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="svg-circ" transform="translate(-29.000000, -29.000000)" fill-rule="nonzero">
-                    <path d="M252,475 C128.840501,475 29,375.159499 29,252 C29,128.840501 128.840501,29 252,29 C375.159499,29 475,128.840501 475,252 C475,375.159499 375.159499,475 252,475 Z M251.5,440 C355.605675,440 440,355.605675 440,251.5 C440,147.394325 355.605675,63 251.5,63 C147.394325,63 63,147.394325 63,251.5 C63,355.605675 147.394325,440 251.5,440 Z" id="Combined-Shape"></path>
-                </g>
-            </g>
-        </svg>
-      </div>
-      <div class = "svg-shape" id = "circ-2">
-        <svg viewBox="0 0 446 446" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <defs>
-              <linearGradient id="Gradient1">
-                <stop class="stop1" offset="0%"/>
-                <stop class="stop2" offset="50%"/>
-                <stop class="stop3" offset="100%"/>
-              </linearGradient>
-              <style type="text/css" class="svg-style"><![CDATA[
-                #Page-1 { fill: url(#Gradient1); }
-                .stop1 { stop-color: red; }
-                .stop2 { stop-color: black; stop-opacity: 0; }
-                .stop3 { stop-color: blue; }
-              ]]>
-              </style>
-          </defs>
-            <ellipse />
-            <path />
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="svg-circ" transform="translate(-29.000000, -29.000000)" fill-rule="nonzero">
-                    <path d="M252,475 C128.840501,475 29,375.159499 29,252 C29,128.840501 128.840501,29 252,29 C375.159499,29 475,128.840501 475,252 C475,375.159499 375.159499,475 252,475 Z M251.5,440 C355.605675,440 440,355.605675 440,251.5 C440,147.394325 355.605675,63 251.5,63 C147.394325,63 63,147.394325 63,251.5 C63,355.605675 147.394325,440 251.5,440 Z" id="Combined-Shape"></path>
-                </g>
-            </g>
-        </svg>
-      </div>
-      <div class = "svg-shape" id = "circ-3">
-        <svg viewBox="0 0 446 446" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <defs>
-              <linearGradient id="Gradient1">
-                <stop class="stop1" offset="0%"/>
-                <stop class="stop2" offset="50%"/>
-                <stop class="stop3" offset="100%"/>
-              </linearGradient>
-              <style type="text/css" class="svg-style"><![CDATA[
-                #Page-1 { fill: url(#Gradient1); }
-                .stop1 { stop-color: red; }
-                .stop2 { stop-color: black; stop-opacity: 0; }
-                .stop3 { stop-color: blue; }
-              ]]>
-              </style>
-          </defs>
-            <ellipse />
-            <path />
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="svg-circ" transform="translate(-29.000000, -29.000000)" fill-rule="nonzero">
-                    <path d="M252,475 C128.840501,475 29,375.159499 29,252 C29,128.840501 128.840501,29 252,29 C375.159499,29 475,128.840501 475,252 C475,375.159499 375.159499,475 252,475 Z M251.5,440 C355.605675,440 440,355.605675 440,251.5 C440,147.394325 355.605675,63 251.5,63 C147.394325,63 63,147.394325 63,251.5 C63,355.605675 147.394325,440 251.5,440 Z" id="Combined-Shape"></path>
-                </g>
-            </g>
-        </svg>
-      </div>
-      <div class = "svg-shape" id = "circ-4">
-        <svg viewBox="0 0 446 446" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <defs>
-              <linearGradient id="Gradient1">
-                <stop class="stop1" offset="0%"/>
-                <stop class="stop2" offset="50%"/>
-                <stop class="stop3" offset="100%"/>
-              </linearGradient>
-              <style type="text/css" class="svg-style"><![CDATA[
-                #Page-1 { fill: url(#Gradient1); }
-                .stop1 { stop-color: red; }
-                .stop2 { stop-color: black; stop-opacity: 0; }
-                .stop3 { stop-color: blue; }
-              ]]>
-              </style>
-          </defs>
-            <ellipse />
-            <path />
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="svg-circ" transform="translate(-29.000000, -29.000000)" fill-rule="nonzero">
-                    <path d="M252,475 C128.840501,475 29,375.159499 29,252 C29,128.840501 128.840501,29 252,29 C375.159499,29 475,128.840501 475,252 C475,375.159499 375.159499,475 252,475 Z M251.5,440 C355.605675,440 440,355.605675 440,251.5 C440,147.394325 355.605675,63 251.5,63 C147.394325,63 63,147.394325 63,251.5 C63,355.605675 147.394325,440 251.5,440 Z" id="Combined-Shape"></path>
-                </g>
-            </g>
-        </svg>
-      </div>
-      <div id = "circ-5" class = "svg-shape">
-        <svg viewBox="0 0 446 446" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <defs>
-              <linearGradient id="Gradient1">
-                <stop class="stop1" offset="0%"/>
-                <stop class="stop2" offset="50%"/>
-                <stop class="stop3" offset="100%"/>
-              </linearGradient>
-              <style type="text/css" class="svg-style"><![CDATA[
-                #Page-1 { fill: url(#Gradient1); }
-                .stop1 { stop-color: red; }
-                .stop2 { stop-color: black; stop-opacity: 0; }
-                .stop3 { stop-color: blue; }
-              ]]>
-              </style>
-          </defs>
-            <ellipse />
-            <path />
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="svg-circ" transform="translate(-29.000000, -29.000000)" fill-rule="nonzero">
-                    <path d="M252,475 C128.840501,475 29,375.159499 29,252 C29,128.840501 128.840501,29 252,29 C375.159499,29 475,128.840501 475,252 C475,375.159499 375.159499,475 252,475 Z M251.5,440 C355.605675,440 440,355.605675 440,251.5 C440,147.394325 355.605675,63 251.5,63 C147.394325,63 63,147.394325 63,251.5 C63,355.605675 147.394325,440 251.5,440 Z" id="Combined-Shape"></path>
-                </g>
-            </g>
-        </svg>
-      </div>
-    </div>
+
     <div id="citizenvoice" class="layer-2 scroll-page to-be-viewed">
-<!--       <h1 style= "visibility: hidden;">HIDE</h1>
-      <h1>Citizen Voice</h1>
-      <p style= "visibility: hidden;">This is the type all about the project. It was a lot of fun and we had three members on the team, myself, Erin and Andreas.</p> -->
-    </div>
-    <div id="citizenvoice" class="layer-1 scroll-page to-be-viewed container">
       <div class="dynamic-speech-bubble animated animate-grow-box" id="speech-bubble-1">
         <div class="text-block">
           <div class="text-line"></div>
@@ -323,22 +286,57 @@
       </div>
       <a href="" onClick="window.startAnimation(event)" style="position:absolute; width:300px height:300px ">
         <div id="play-button" class="animated">
-          <svg width="170px" height="170px" viewBox="0 0 110 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
-              <title>Group 3</title>
-              <desc>Created with Sketch.</desc>
-              <defs></defs>
-              <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <g id="Desktop-Copy-8" transform="translate(-185.000000, -163.000000)">
-                      <g id="Group-3" transform="translate(186.000000, 164.000000)">
-                          <circle id="play-stroked-path" stroke="#EEEEEE" stroke-width="2" stroke-dasharray="9,8" cx="54.1751595" cy="54.8275032" r="53.6749992"></circle>
-                          <ellipse id="play-solid-path" stroke="#EEEEEE" stroke-width="3" stroke-dasharray="24,8" cx="54.097174" cy="55.1715393" rx="45.3656242" ry="45.3656242"></ellipse>
-                          <path d="M77.4788513,51.7750309 C80.0424977,53.4457148 80.0333612,56.1603826 77.4788513,57.8251125 L45.243731,78.8321816 C42.6800846,80.5028655 40.6018386,79.3735955 40.6018386,76.2951297 L40.6018386,33.3050137 C40.6018386,30.2331547 42.689221,29.1032319 45.243731,30.7679617 L77.4788513,51.7750309 Z" id="Triangle-3" fill="#D0F3D0"></path>
+          <svg width="170px" height="170px" viewBox="0 0 114 114" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs>
+                  <circle id="path-1" cx="53.6749992" cy="53.6749992" r="53.6749992"></circle>
+                  <filter x="-3.3%" y="-3.3%" width="108.4%" height="108.4%" filterUnits="objectBoundingBox" id="filter-2">
+                      <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+                      <feOffset dx="1" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+                      <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+                      <feOffset dx="1" dy="1" in="shadowInner" result="shadowInner"></feOffset>
+                      <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+                      <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                      <feColorMatrix values="0 0 0 0 0.909359056   0 0 0 0 0.909359056   0 0 0 0 0.909359056  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                  </filter>
+                  <circle id="path-3" cx="54.097174" cy="54.1715393" r="45.3656242"></circle>
+                  <filter x="-4.4%" y="-4.4%" width="111.0%" height="111.0%" filterUnits="objectBoundingBox" id="filter-4">
+                      <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+                      <feOffset dx="1" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+                      <feMorphology radius="1.5" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+                      <feOffset dx="1" dy="1" in="shadowInner" result="shadowInner"></feOffset>
+                      <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+                      <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                      <feColorMatrix values="0 0 0 0 0.906542304   0 0 0 0 0.906542304   0 0 0 0 0.906542304  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                  </filter>
+                  <linearGradient x1="50%" y1="1.32732781%" x2="50%" y2="97.9591837%" id="linearGradient-5">
+                      <stop stop-color="#d0f3d0" offset="0%"></stop>
+                      <stop stop-color="#d0f3d0" offset="100%"></stop>
+                  </linearGradient>
+                  <path d="M77.8770127,50.7750309 C80.4406591,52.4457148 80.4315226,55.1603826 77.8770127,56.8251125 L45.6418924,77.8321816 C43.078246,79.5028655 41,78.3735955 41,75.2951297 L41,32.3050137 C41,29.2331547 43.0873824,28.1032319 45.6418924,29.7679617 L77.8770127,50.7750309 Z" id="path-6"></path>
+                  <filter x="-18.0%" y="-10.1%" width="136.1%" height="128.2%" filterUnits="objectBoundingBox" id="filter-7">
+                      <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                      <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                      <feColorMatrix values="0 0 0 0 0.818292942   0 0 0 0 0.818292942   0 0 0 0 0.818292942  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                  </filter>
+              </defs>
+              <g id="Page-dv" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Group" transform="translate(2.000000, 2.000000)">
+                      <g id="play-solid-path" stroke-dasharray="9,8">
+                          <use fill="black" fill-opacity="0" filter="" xlink:href="#path-1"></use>
+                          <use stroke="#EEEEEE" stroke-width="2" xlink:href="#path-1"></use>
+                      </g>
+                      <g id="play-stroked-path" stroke-dasharray="24,8">
+                          <use fill="black" fill-opacity="0" filter="" xlink:href="#path-3"></use>
+                          <use stroke="#EEEEEE" stroke-width="3" xlink:href="#path-3"></use>
+                      </g>
+                      <g id="Triangle-3" fill-rule="nonzero">
+                          <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                          <use fill="url(#linearGradient-5)" fill-rule="evenodd" xlink:href="#path-6"></use>
                       </g>
                   </g>
               </g>
           </svg>
-          <h3>What is Citizen Voice?</h3>
+          <h3 style="visibility: hidden">What is Citizen Voice?</h3>
         </div>
       </a>
       <div id="flash-titles-container">
@@ -349,30 +347,6 @@
           <h2 style="margin-left:75px">Up-vote and share the issues that you support<span>.</span></h2>
         </div>
       </div>
-<!--       <h2>Up-vote and share issues to show support<span>.</span></h2>
- --><!--  <div id="speech-bubble-grow-test" class="dynamic-speech-bubble">
-        <div class="text-block">
-          <div class="text-line" id="post-title"></div>
-          <div class="text-line"></div>
-          <div class="text-line"></div>
-          <div id="post-paragraph-end" class="text-line"></div>
-          <div class="text-line"></div>
-          <div class="text-line"></div>
-          <div id="post-paragraph-end" class="text-line text-last-line"></div>
-          <div id="post-tags">
-            <span>@</span>
-            <img src="assets/dist/images/avi.png" alt="">
-          </div>
-        </div>
-        <div id="reply-speech-bubble" class="dynamic-speech-bubble">
-          <div class="text-block">
-            <div class="text-line"></div>
-            <div class="text-line"></div>
-            <div class="text-line text-last-line"></div>
-          </div>
-          <img id="reply-avi" src="assets/dist/images/avi.png" alt="">
-        </div>
-      </div> -->
       <div id="reply-speech-bubble" class="animated reply-animate dynamic-speech-bubble">
         <div class="text-block animated reply-animate">
           <div class="text-line animated reply-animate"></div>
@@ -412,14 +386,29 @@
       </div>
     </div>
     <div id="link-cloud" class="layer-1 scroll-page to-be-viewed">
-      <h1 style = "visibility: hidden">02.</h1>
-      <h1 style = "visibility: hidden">Link Cloud</h1>
-      <p>This is the type all about the project. It was a lot of fun and we had three members on the team, myself, Erin and Andreas.</p>
-    </div>
-    <div id="link-cloud" class="layer-2 scroll-page to-be-viewed">
-      <h1>02.</h1>
-      <h1>Link Cloud</h1>
-      <p style= "visibility: hidden">This is the type all about the project. It was a lot of fun and we had three members on the team, myself, Erin and Andreas.</p>
+        <div class="col-sm-5"></div>
+        <div class="col-sm-6 animated" id="link-cloud-main-text">
+          <h1>02.</h1>
+          <h1>Link Cloud</h1>
+          <p>This is the type all about the project. It was a lot of fun and we had three members on the team, myself, Erin and Andreas.</p>
+          <div class="col-sm-4" id="role">
+            <h4> Test</h4>
+            <p> This is the test about the project and other.. thing like what we did , who worked on it. </p>
+          </div>
+          <div class="col-sm-4" id="year">
+            <h4> Test</h4>
+            <p> This is the test about the project and other.. thing like what we did , who worked on it. </p>
+          </div>
+          <div class="col-sm-4" id="platform">
+            <h4> Test</h4>
+            <p> This is the test about the project and other.. thing like what we did , who worked on it. </p>
+          </div>
+          <button id="lc-button" class="view-project">View Project</button>
+        </div>
+        <img id="lc-background" src="assets/dist/images/cloud.svg" alt="">
+        <img id="link-box" src="assets/dist/images/link-box.svg" alt="">
+        <img id="cloud-1" src="assets/dist/images/cloud-1.svg" alt="">
+        <img id="cloud-2" src="assets/dist/images/cloud-2.svg" alt="">
     </div>
   </body>
 </html>

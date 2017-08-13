@@ -21,7 +21,12 @@ button.view-project{
 }
 
 button#cv-button{
-  background-color: $cit-green;
+  background: $cit-gradient;
+  box-shadow: $button-shadow;
 }
 
+button#lc-button{
+  background: $lc-gradient;
+  box-shadow: $button-shadow;
+}
 

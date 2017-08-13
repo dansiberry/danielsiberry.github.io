@@ -1,60 +1,57 @@
 window.domLoaded = function domLoaded() {
 
-  let pageDownButton = document.getElementById("page-down")
-  let pageUpButton = document.getElementById("page-up")
+  // let pageDownButton = document.getElementById("page-down")
+  // let pageUpButton = document.getElementById("page-up")
   let landing = document.getElementById("landing")
   let citizenVoice = document.getElementById("citizenvoice")
   let pages = document.getElementsByClassName("scroll-page")
   let home = document.getElementById("home")
   let pageCounter = 0
+  let fired = 0
 
-  pageDownButton.addEventListener("click", pageDown)
-  pageUpButton.addEventListener("click", pageUp)
+  // pageDownButton.addEventListener("click", pageDown)
+  // pageUpButton.addEventListener("click", pageUp)
+
+  window.addEventListener('wheel', function(e) {
+    let trackFunc = new Date()
+    if ((trackFunc.getTime() - fired) > 1400) {
+      if(e.deltaY >= 1 ) {
+        pageDown()
+        fired = new Date().getTime();
+      }
+      if(e.deltaY <= -1) {
+        pageUp()
+        fired = new Date().getTime();
+      }
+    }
+  })
 
   function pageUp() {
     if (pageCounter != 0){
       pageCounter --
-      pageCounter --
-      let currentPage1 = pages[pageCounter]
-      let currentPage2 = pages[pageCounter + 1]
-      let pageBelow1 = pages[pageCounter + 2]
-      let pageBelow2 = pages[pageCounter + 3]
+      let currentPage = pages[pageCounter]
+      let pageBelow = pages[pageCounter + 1]
       home.classList.remove("background-" + (pageCounter / 2 + 1))
       home.classList.add("background-" + (pageCounter / 2))
-      pageBelow1.classList.remove("in-view")
-      pageBelow1.classList.add("to-be-viewed")
-      pageBelow2.classList.remove("in-view")
-      pageBelow2.classList.add("to-be-viewed")
-      currentPage1.classList.remove("viewed")
-      currentPage1.classList.add("in-view")
-      currentPage2.classList.remove("viewed")
-      currentPage2.classList.add("in-view")
+      pageBelow.classList.remove("in-view")
+      pageBelow.classList.add("to-be-viewed")
+      currentPage.classList.remove("viewed")
+      currentPage.classList.add("in-view")
     }
   }
 
   function pageDown() {
-    if (pageCounter != (pages.length - 2)){
+    if (pageCounter != (pages.length - 1)){
       pageCounter ++
-      pageCounter ++
-      let currentPage1 = pages[pageCounter]
-      let currentPage2 = pages[pageCounter + 1]
-      let pageAbove1 = pages[pageCounter - 1]
-      let pageAbove2 = pages[pageCounter - 2]
+      let currentPage = pages[pageCounter]
+      let pageAbove = pages[pageCounter - 1]
       home.classList.remove("background-" + (pageCounter / 2 - 1))
       home.classList.add("background-" + (pageCounter / 2))
-      pageAbove1.classList.remove("in-view")
-      pageAbove1.classList.add("viewed")
-      pageAbove2.classList.remove("in-view")
-      pageAbove2.classList.add("viewed")
-      currentPage1.classList.remove("to-be-viewed")
-      currentPage1.classList.add("in-view")
-      currentPage2.classList.remove("to-be-viewed")
-      currentPage2.classList.add("in-view")
-      console.log(pageCounter)
-      console.log(pages.length)
+      pageAbove.classList.remove("in-view")
+      pageAbove.classList.add("viewed")
+      currentPage.classList.remove("to-be-viewed")
+      currentPage.classList.add("in-view")
     }
   }
-
-  pageDown();
 
 }

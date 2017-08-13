@@ -16,10 +16,15 @@ body {
 $delay : 1s;
 $animation-length : 19s;
 
-// $cit-green : #65D565;
-$cit-green: #65CC66;
+$cit-green : #65D565;
+// $cit-green: #65CC66;
 $half-cit-green : #d0f3d0;
 $light-grey : #EEEEEE;
+$cit-gradient : linear-gradient(to bottom, #86d486, #58c158);
+
+$lc-gradient : linear-gradient(to bottom, #70C5F1, #66B3DB);
+
+$button-shadow : 3px 3px 5px #e0e0e0;
 
 .custom-hidden{
   opacity:0 ;

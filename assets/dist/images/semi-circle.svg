@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="50px" viewBox="0 0 40 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0.25781251%" y1="49.7500002%" x2="101.257813%" y2="49.7500002%" id="linearGradient-1">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#53A0FE" offset="47.5247532%"></stop>
+            <stop stop-color="#B4EC51" offset="100%"></stop>
+        </linearGradient>
+        <path d="M369.000001,130.698081 C369.256349,130.952597 369.526699,131.154652 369.810986,131.297873 C371.972428,132.386788 374.414603,133 377.000001,133 C385.836557,133 393.000001,125.836556 393.000001,117 C393.000001,108.163444 385.836557,101 377.000001,101 C374.085704,101 371.353387,101.779155 369,103.140516" id="path-2"></path>
+        <filter x="-41.7%" y="-31.2%" width="200.0%" height="175.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="2" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="5" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="2" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.866416879   0 0 0 0 0.866416879   0 0 0 0 0.866416879  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Copy-7" transform="translate(-364.000000, -94.000000)">
+            <g id="Combined-Shape">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                <use stroke="url(#linearGradient-1)" stroke-width="10" xlink:href="#path-2"></use>
+            </g>
+        </g>
+    </g>
+</svg>

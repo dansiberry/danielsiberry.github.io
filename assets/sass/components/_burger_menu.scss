@@ -1,0 +1,156 @@
+#burger-button {
+  position:fixed;
+  top:10;
+  right:10;
+  cursor:pointer;
+  z-index: 99;
+  width:30px;
+  height:30px;
+  overflow:hidden;
+}
+
+#menu-shadow {
+  transition:all 0.25s;
+  z-index: -1;
+  right:-100px;
+  top:-100px;
+  overflow: hidden;
+}
+
+#circle-container{
+  height: 50px;
+  width: 50px;
+  z-index: 99;
+  position: fixed;
+  top: 25;
+  right: 30;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.b-a {
+   transition: all .25s;
+   content: "";
+   position: absolute;
+   right: 0;
+   height: 2px;
+   width: 25px;
+   border-radius: 15px;
+   background-color: black;
+}
+.menu-collapsed {
+   // transition: all .25s;
+   position: fixed;
+   top: -100px;
+   right: -100px;
+   z-index: 1;
+   cursor: pointer;
+   ul {
+      transition: all 0s;
+      position: fixed;
+      left: -9000px;
+   }
+}
+.bar {
+   z-index: 99;
+   @extend .b-a;
+   position: absolute;
+   right: 11px;
+   top: 24px;
+   &:before {
+      @extend .b-a;
+      top: -8px;
+   }
+   &:after {
+      @extend .b-a;
+      top: 8px;
+   }
+}
+.b-a-expanded {
+   transition: all .25s;
+   top: -0px;
+}
+#stripes {
+  background-size: 144px !important;
+  background-position: 0 0 ;
+  position:absolute;
+  top:0;
+  right:0;
+  height:800px;
+  width:800px;
+  animation: 3.5s linear 0s infinite normal none paused animateStripes;
+  background: linear-gradient(-45deg, white 25%, transparent 25%, transparent 50%, white 50%, white 75%, transparent 75%, transparent)
+}
+@keyframes animateStripes {
+  0%{
+    background-position: 0 0 ;
+  }
+  100% {
+    background-position: 142px 0px ;
+  }
+}
+#menu-toggle:checked ~ label #menu-shadow {
+   position:fixed;
+   width: 200px;
+   height:340px;
+   right:40;
+   top:40;
+   z-index: -1;
+   // background-color: pink;
+}
+
+#menu-toggle:checked ~ label #menu-expanded {
+   // transition: all .25s;
+   line-height: 50px;
+   height: initial;
+   width: 200px;
+   border-radius: 0px;
+   right: 10;
+   top:10;
+   background-color: white;
+   border: 2px solid black;
+   ul {
+      transition: all 0s;
+      position: relative;
+      left: 0;
+      z-index: 2;
+      margin-top: 70px;
+      list-style:none;
+      padding-left: 0px;
+      margin-bottom: 20px;
+      font-family: 'museo-sans';
+      padding: 0px 20px;
+      text-align: center;
+   }
+   a {
+      transition: all .15s;
+      text-decoration: none;
+      font-size:18px;
+      padding: 5px;
+      color: black;
+      display:block;
+      &:hover {
+         // background-color:rgba(white, .8);
+         transition: all .15s;
+         color:black;
+         border: 1px solid black;
+      }
+   }
+   #circle-container{
+    border-color: black;
+   }
+   .bar {
+      background-color: transparent;
+      transition: all .25s;
+      &:before {
+         @extend .b-a-expanded;
+         transform: rotate(45deg);
+         background-color: black;
+      }
+      &:after {
+         @extend .b-a-expanded;
+         transform: rotate(-45deg);
+         background-color: black;
+      }
+   }
+}

@@ -1,4 +1,4 @@
-let colors = [ [[180,236,81], [83,160,254], [48,35,174]], [[250,217,97], [249,163,63], [247,107,28]] ]
+let colors = [ [[180,236,81], [83,160,254], [48,35,174]], [[250,217,97], [249,163,63], [247,107,28]], [[150,117,7], [29,13,163], [47,7,128]] ]
 let currentColor = 0
 let destColor = 1
 let bumper
@@ -15,7 +15,7 @@ function update() {
           .stop2 { stop-color: ${col2}; }
           .stop3 { stop-color: ${col3}; }
      `)
-          $('.shape').css(
+          $('.grad-animate').css(
    "background-image",
    "linear-gradient(-90deg," + col1 + "0%, " + col2 + "48%, " + col3 + "100%)"
     );
@@ -34,15 +34,27 @@ async function bumpGrad(){
         let modify = (colors[destColor][col][val] - colors[currentColor][col][val]) / steps
         go[col][val]+= modify
       }
-      update()
     }
   }
+  update()
   stepCounter ++
   if(stepCounter == steps){
     update()
     stepCounter = 0;
-    destColor == 1? destColor = 0 : destColor = 1
-    currentColor == 1? currentColor = 0 : currentColor = 1
+    if(destColor == colors.length -1) {
+      destColor = 0
+    }
+    else {
+      destColor ++
+    }
+    if(currentColor == colors.length -1) {
+      currentColor = 0
+    }
+    else {
+      currentColor ++
+    }
+    // destColor == 1? destColor = 0 : destColor = 1
+    // currentColor == 1? currentColor = 0 : currentColor = 1
     clearInterval(bumper)
     function timeout(ms) {
         return new Promise(resolve => setTimeout(transition, ms));

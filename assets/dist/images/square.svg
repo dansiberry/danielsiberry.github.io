@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,0 L500,0 L500,500 L0,500 L0,0 Z M127,127 L127,373 L373,373 L373,127 L127,127 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="triangle">
+            <g id="Combined-Shape">
+                <use fill="#8BCEE8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <path stroke="#979797" stroke-width="1" d="M0.5,0.5 L499.5,0.5 L499.5,499.5 L0.5,499.5 L0.5,0.5 Z M126.5,127 L126.5,373 L126.5,373.5 L127,373.5 L373,373.5 L373.5,373.5 L373.5,373 L373.5,127 L373.5,126.5 L373,126.5 L127,126.5 L126.5,126.5 L126.5,127 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="79px" height="30px" viewBox="0 0 79 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Line Copy 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0.25781251%" y1="49.7500002%" x2="101.257813%" y2="49.7500002%" id="linearGradient-1">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#53A0FE" offset="47.5247532%"></stop>
+            <stop stop-color="#B4ED50" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Desktop-Copy-7" transform="translate(-139.000000, -189.000000)" stroke="url(#linearGradient-1)" stroke-width="10">
+            <path d="M144,194.64276 C144,194.64276 147.12854,201.232144 153.833008,200.531432 C160.537476,199.83072 162.460937,191.689635 170.786133,194.64276 C179.111328,197.595885 174.158203,205.211119 183.537109,208.542174 C192.916016,211.873229 192.384766,205.304869 200.832031,205.304869 C209.279297,205.304869 212.321289,214.001158 212.321289,214.001158" id="Line-Copy-5"></path>
+        </g>
+    </g>
+</svg>

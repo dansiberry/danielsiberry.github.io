@@ -67,7 +67,8 @@
    animation: $animation-length linear 0s 1 normal none paused hideShowPlayButton;
      h3 {
       font-family: 'museo-sans';
-      color:$half-cit-green;
+      color: lightgrey;
+      font-size: 20px;
      }
 }
 @keyframes hideShowPlayButton {
