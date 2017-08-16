@@ -4,22 +4,22 @@
   right:10;
   cursor:pointer;
   z-index: 99;
-  width:30px;
-  height:30px;
+  width:25px;
+  height:25px;
   overflow:hidden;
 }
 
-#menu-shadow {
-  transition:all 0.25s;
-  z-index: -1;
-  right:-100px;
-  top:-100px;
-  overflow: hidden;
-}
+// #menu-shadow {
+//   transition:all 0.25s;
+//   z-index: -1;
+//   right:-100px;
+//   top:-100px;
+//   overflow: hidden;
+// }
 
 #circle-container{
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   z-index: 99;
   position: fixed;
   top: 25;
@@ -34,101 +34,86 @@
    position: absolute;
    right: 0;
    height: 2px;
-   width: 25px;
+   width: 20px;
    border-radius: 15px;
    background-color: black;
 }
 .menu-collapsed {
    // transition: all .25s;
    position: fixed;
-   top: -100px;
-   right: -100px;
+   top: -500px;
+   right: -500px;
    z-index: 1;
    cursor: pointer;
    ul {
       transition: all 0s;
-      position: fixed;
-      left: -9000px;
+      left: -500px;
+      bottom:0px;
    }
 }
 .bar {
    z-index: 99;
    @extend .b-a;
    position: absolute;
-   right: 11px;
-   top: 24px;
+   right: 9px;
+   top: 20px;
    &:before {
       @extend .b-a;
-      top: -8px;
+      top: -6px;
    }
    &:after {
       @extend .b-a;
-      top: 8px;
+      top: 6px;
    }
 }
 .b-a-expanded {
    transition: all .25s;
    top: -0px;
 }
-#stripes {
-  background-size: 144px !important;
-  background-position: 0 0 ;
-  position:absolute;
-  top:0;
-  right:0;
-  height:800px;
-  width:800px;
-  animation: 3.5s linear 0s infinite normal none paused animateStripes;
-  background: linear-gradient(-45deg, white 25%, transparent 25%, transparent 50%, white 50%, white 75%, transparent 75%, transparent)
-}
-@keyframes animateStripes {
-  0%{
-    background-position: 0 0 ;
-  }
-  100% {
-    background-position: 142px 0px ;
-  }
-}
-#menu-toggle:checked ~ label #menu-shadow {
-   position:fixed;
-   width: 200px;
-   height:340px;
-   right:40;
-   top:40;
-   z-index: -1;
-   // background-color: pink;
-}
 
 #menu-toggle:checked ~ label #menu-expanded {
-   // transition: all .25s;
+   transition: width .5s;
    line-height: 50px;
-   height: initial;
-   width: 200px;
+   height: 250px;
+   width: 180px;
    border-radius: 0px;
    right: 10;
    top:10;
    background-color: white;
-   border: 2px solid black;
+   border: 1px solid black;
+   overflow:hidden;
    ul {
-      transition: all 0s;
-      position: relative;
+      transition: height 0.5s;
+      position: absolute;
       left: 0;
+      width:180px;
       z-index: 2;
-      margin-top: 70px;
+      margin-top: 65px;
       list-style:none;
       padding-left: 0px;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       font-family: 'museo-sans';
       padding: 0px 20px;
       text-align: center;
    }
+   li {
+    height:50px;
+    overflow:hidden;
+   }
+   #coming-soon:hover a {
+    transition: all 0.6s;
+    border: none;
+    margin-top: -50px;
+    cursor:default;
+   }
    a {
-      transition: all .15s;
+      transition: all .25s;
       text-decoration: none;
-      font-size:18px;
-      padding: 5px;
+      font-size:16px;
+      padding: 1px;
       color: black;
       display:block;
+      height:99%;
       &:hover {
          // background-color:rgba(white, .8);
          transition: all .15s;
@@ -153,4 +138,35 @@
          background-color: black;
       }
    }
+}
+#menu-expanded.grow-to-form {
+  height: 280px !important;
+  width:280px !important;
+}
+
+#contact-box {
+  position:absolute;
+  transition:all 1s;
+  justify-content: space-around;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 280px;
+  left:-400px;
+  input {
+    margin-bottom: 10px;
+  }
+}
+
+.grow-to-form #contact-box {
+  left:0px;
+    transition: all 0.5s;
+}
+#menu-box{
+  transition: all 0.4s !important;
+}
+.grow-to-form #menu-box {
+  transition: all 1s;
+  left:400px !important;
 }

@@ -7,3 +7,10 @@ import "./animation.js"
 
 
 
+window.showForm = function showForm() {
+  document.getElementById("menu-expanded").classList.add("grow-to-form")
+}
+
+window.hideForm = function hideForm() {
+  document.getElementById("menu-expanded").classList.remove("grow-to-form")
+}

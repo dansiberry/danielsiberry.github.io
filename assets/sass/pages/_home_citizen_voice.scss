@@ -17,6 +17,9 @@
       opacity: 0.2;
       transform: scaleX(-1);
     }
+    #citizen-voice-main-text :nth-child(3) {
+      padding-top:10px;
+    }
   }
 }
 

@@ -11,6 +11,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 16px;
 }
 
 $delay : 1s;
@@ -28,4 +29,12 @@ $button-shadow : 3px 3px 5px #e0e0e0;
 
 .custom-hidden{
   opacity:0 ;
+}
+
+.hide-shrink{
+  padding: 0px !important;
+  margin: 0 !important;
+  opacity:0 !important;
+  width: 0px !important;
+  height: 0px !important;
 }
