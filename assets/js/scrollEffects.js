@@ -31,8 +31,8 @@ window.domLoaded = function domLoaded() {
       pageCounter --
       let currentPage = pages[pageCounter]
       let pageBelow = pages[pageCounter + 1]
-      home.classList.remove("background-" + (pageCounter / 2 + 1))
-      home.classList.add("background-" + (pageCounter / 2))
+      home.classList.remove("background-" + (pageCounter + 1))
+      home.classList.add("background-" + (pageCounter))
       pageBelow.classList.remove("in-view")
       pageBelow.classList.add("to-be-viewed")
       currentPage.classList.remove("viewed")
@@ -45,8 +45,8 @@ window.domLoaded = function domLoaded() {
       pageCounter ++
       let currentPage = pages[pageCounter]
       let pageAbove = pages[pageCounter - 1]
-      home.classList.remove("background-" + (pageCounter / 2 - 1))
-      home.classList.add("background-" + (pageCounter / 2))
+      home.classList.remove("background-" + (pageCounter - 1))
+      home.classList.add("background-" + (pageCounter))
       pageAbove.classList.remove("in-view")
       pageAbove.classList.add("viewed")
       currentPage.classList.remove("to-be-viewed")

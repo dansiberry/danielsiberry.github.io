@@ -2,8 +2,9 @@
  position:absolute;
  bottom: 120;
  left: 115;
- width: 420px;
- z-index: 999;
+ width: 400px;
+ z-index: 5;
+ opacity: .9
 }
 #cloud-1 {
  position:absolute;
@@ -28,3 +29,6 @@
   padding-top:10px;
 }
 
+#link-cloud-main-text {
+    z-index: 99;
+}

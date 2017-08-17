@@ -27,6 +27,19 @@
 }
 
 @font-face {
+    font-family: 'museo-sans-100';
+    src: url('../dist/fonts/museosans-100.ttf') format('truetype');
+    font-weight: light;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'museo-sans-500';
+    src: url('../dist/fonts/museosans-300.ttf') format('truetype');
+    font-weight: light;
+    font-style: normal;
+}
+@font-face {
     font-family: 'museo-sans';
     src: url('../dist/fonts/museosans.ttf') format('truetype');
     font-weight: normal;

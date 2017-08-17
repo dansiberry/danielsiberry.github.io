@@ -1,29 +1,81 @@
 #arrow-prompt{
   position:fixed;
-  width:150px;
-  left:-30px;
+  width:180px;
+  left:-55px;
   text-align: right;
-  bottom:50px;
+  bottom:-20px;
   transform: rotate(270deg);
   z-index: 99;
   p{
-    font-family: museo-sans;
-    color: #333333;
+    font-family: arial;
+    position:absolute;
+    color: black;
     letter-spacing: 1;
     font-size: 18px;
   }
   span {
     animation: pulse 2s ease infinite;
+    position:absolute;
+    transition: all 1s;
+    opacity:1;
+    font-size: 25px;
+    left: 160;
+    top:-6;
     @keyframes pulse {
       0% {
-        padding-right: 0px;
+        left: 160
       }
       50% {
-        padding-right: 20px;
+        left: 140
       }
       100% {
-        padding-right: 0px;
+        left: 160
       }
     }
   }
+
+  p::after {
+    font-family: 'museo-sans';
+    font-size: 19px;
+    position:absolute;
+    transition:all 1s;
+    transform:rotate(0deg);
+    left:199;
+    bottom: -27;
+    display: inline-block;
+    content: " Projects"
+ }
+   p::before {
+    opacity: 0;
+    font-size: 18px;
+    font-family: 'museo-sans-500';
+    position:absolute;
+    transition:all 1s;
+    transition: 1s;
+    left:160;
+    bottom: -30;
+    display: inline-block;
+    transform:rotate(90deg);
+    content: "0/2"
+ }
 }
+
+ .background-1 #arrow-prompt p::before {
+    opacity: 1;
+    content: "1/2";
+ }
+ .background-1 #arrow-prompt span, .background-2 #arrow-prompt span {
+    opacity: 0;
+ }
+
+  .background-1 #arrow-prompt p::after, .background-2 #arrow-prompt p::after {
+    font-size: 16px;
+    position:absolute;
+    bottom: -45;
+    left:170;
+    transform:rotate(90deg);
+ }
+ .background-2 #arrow-prompt p::before {
+    opacity: 1;
+    content: "2/2";
+ }

@@ -23,6 +23,33 @@ button.view-project{
   left:70;
 }
 
+#menu-expanded input[type="submit"], #menu-expanded button {
+  color: #333333;
+  margin-top: 10px;
+  line-height: 25px;
+  font-size: 16px;
+  transition: all 0.2s;
+  transition-timing-function: linear;
+  width: 80px;
+  border: 1px solid lightgrey;
+  background-color: white;
+  height: 40px;
+  font-weight: 400;
+}
+
+#menu-expanded input[type="submit"]:hover, #menu-expanded button:hover {
+  background-color: #5DC35D;
+  color:white;
+}
+
+#menu-expanded button:hover {
+    background-color: #03a9f4;
+}
+#buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
 button#cv-button{
   background: $cit-gradient;
   box-shadow: $button-shadow;
@@ -31,5 +58,6 @@ button#cv-button{
 button#lc-button{
   background: $lc-gradient;
   box-shadow: $button-shadow;
+    z-index: 99;
 }
 

@@ -11,13 +11,12 @@
          <div class="bar"></div>
        </div>
        <nav>
-          <form id="contact-box" action="https://formspree.io/your@email.com"
-                method="POST">
-              <input type="text" name="name">
-              <input type="email" name="_replyto">
+          <form id="contact-box" action="https://formspree.io/dansiberry1@gmail.com" method="POST">
+              <textarea  name="Message" placeholder = ""></textarea>
+              <input type="email" name="_replyto" placeholder="Your email">
               <div id="buttons" class="col-xs-12">
                 <input type="submit" value="Send">
-                <button type="button" onClick="window.hideForm()">Nah</button>
+                <button type="button" onClick="window.hideForm()"> Back</button>
               </div>
           </form>
           <ul id="menu-box">
@@ -37,8 +36,11 @@
 
 
   <body id="home" onload="window.domLoaded(), window.animationScripts()">
+      <a id="logo" href="/">
+        <img  src="./assets/dist/images/logo.svg" alt="">
+      </a>
       <div id="arrow-prompt">
-        <p><span>&larr;</span> Projects</p>
+        <p><span>&larr;</span></p>
       </div>
 <!--     <button id="page-down">page down</button>
     <button id="page-up">page up</button> -->

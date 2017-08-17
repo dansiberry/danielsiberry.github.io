@@ -6,8 +6,8 @@
 
     #icons {
       position:absolute;
-      left:33;
-      bottom:160;
+      left:43;
+      bottom:180;
       display:flex;
       flex-direction:column;
       a {
@@ -18,7 +18,6 @@
       img {
         width: 15px;
         transition: all 0.5s;
-        opacity:0.4;
       }
       #cp {
         width:26px;
@@ -38,6 +37,7 @@
     h1{
       z-index: 99;
       width:60%;
+      color:black;
       margin: auto;
       font-size: 40px;
       font-family: 'futura-pt-bold';
