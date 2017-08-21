@@ -1,8 +1,9 @@
 #link-box{
  position:absolute;
- bottom: 120;
- left: 115;
+ bottom: 10vw;
+ left: 9vw;
  width: 400px;
+ max-width: 40%;
  z-index: 5;
  opacity: .9
 }
@@ -20,15 +21,17 @@
 }
 #lc-background {
   position:absolute;
-  width:105vw;
-  bottom:0;
+  width:125vw;
+  bottom:-10px;
   left:-30;
 }
-
+#lc-wrapper {
+  color: black;
+}
 #link-cloud-main-text :nth-child(3) {
   padding-top:10px;
 }
 
 #link-cloud-main-text {
-    z-index: 99;
+    z-index: 9;
 }

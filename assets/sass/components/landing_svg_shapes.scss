@@ -43,18 +43,29 @@
       width:20px;
       height:20px;
       transform:rotate(20deg);
-      top:80px;
+      top:110px;
       left:300px;
-      animation: 3s linear 0s infinite alternate forwards running fadeCross;
+      animation: 4s linear 0s infinite alternate forwards running fadeCross;
     }
 
     #cross-2{
       width:30px;
       height:30px;
       transform:rotate(20deg);
-      top:280px;
-      left:390px;
-      animation: 3s linear 0s infinite alternate forwards running fadeCross;
+      top:140px;
+      right:180px;
+      animation: 4s linear 0s infinite alternate forwards running fadeCross;
+      animation-delay: 1.5s
+    }
+    #cross-3{
+      display:none;
+      width:25px;
+      height:25px;
+      transform:rotate(20deg);
+      top:45vh;
+      right:120px;
+      animation: 4s linear 0s infinite alternate forwards running fadeCross;
+      animation-delay: 0.5s
     }
     #square-1 {
       width:40px;
@@ -63,17 +74,37 @@
       bottom:280px;
       left:160px;
     }
+    #square-2 {
+      display:none
+      // transform:skewX(0deg);
+      // width:40px;
+      // height:40px;
+      // transform:rotate(-6deg);
+      // bottom:20vh;
+      // right:20vw;
+      // animation: 12s cubic-bezier(0.68, -0.95, 0.265, 1.95) 0s infinite alternate none running skewSquare;
+    }
+    #straight-line {
+      display:none;
+      width:20px;
+      height:20px;
+      border-radius:10px;
+      left:25%;
+      bottom:90;
+      transform:rotate(0deg);
+      animation: 15s ease 0s infinite normal none running growLine;
+    }
     #triangle-1{
       width:50px;
       height:50px;
-      left:30%;
-      bottom:70;
+      left:35vw;
+      bottom: 15vh;
     }
     #semi-circle-1{
       width:50px;
       height:50px;
-      top:250;
-      right:300;
+      top:220;
+      right:370;
     }
     #semi-circle-animation {
       animation: 9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s infinite normal none running swingSemiCircle;
@@ -82,7 +113,7 @@
     #swing-circ{
       width:40px;
       height:40px;
-      top:50;
+      bottom:150;
       right:300;
       border-radius:50%;
     }
@@ -133,5 +164,91 @@
   }
   100%{
     opacity:0;
+  }
+}
+@keyframes growLine {
+  0%{
+    width:20px;
+    height:20px;
+    border-radius:10px;
+    transform:rotate(0deg);
+  }
+  50%{
+    transform:rotate(0deg);
+    width:20px;
+    height:20px;
+    border-radius:10px;
+  }
+
+
+  60%{
+    transform:rotate(360deg);
+    width:35px;
+    border-radius:5px;
+    height:10px
+  }
+  70%{
+    transform:rotate(360deg);
+    width:35px;
+    border-radius:5px;
+    height:10px
+  }
+
+
+  80%{
+    transform:rotate(0deg);
+    width:20px;
+    height:20px;
+    border-radius:10px;
+  }
+  100%{
+    transform:rotate(0deg);
+    width:20px;
+    height:20px;
+    border-radius:10px;
+  }
+}
+@keyframes skewSquare {
+  0%{
+    transform:skewX(0deg);
+    // transform:roate(0deg);
+  }
+  30% {
+    transform:skewX(0deg);
+  }
+  40% {
+    transform:skewX(-20deg);
+  }
+  60%{
+    transform:skewX(-20deg)
+  }
+  80%{
+    transform:skewX(0deg)
+  }
+
+  100%{
+    transform:skewX(0deg)
+  }
+}
+
+
+@media (max-width: 888px) {
+  #home {
+    #square-1 {
+      left:100;
+    }
+    #cross-2 {
+      top:240;
+    }
+    #semi-circle-1 {
+      top:180;
+      right:20vw;
+    }
+    #wavy-line {
+      left: 10vw;
+    }
+    #cross-1 {
+      left: 25vw;
+    }
   }
 }

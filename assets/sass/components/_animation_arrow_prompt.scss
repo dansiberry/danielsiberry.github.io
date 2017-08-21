@@ -47,13 +47,13 @@
  }
    p::before {
     opacity: 0;
-    font-size: 18px;
-    font-family: 'museo-sans-500';
+    font-size: 24px;
+    font-family: 'inconsolata';
     position:absolute;
     transition:all 1s;
     transition: 1s;
     left:160;
-    bottom: -30;
+    bottom: -35;
     display: inline-block;
     transform:rotate(90deg);
     content: "0/2"
@@ -72,10 +72,26 @@
     font-size: 16px;
     position:absolute;
     bottom: -45;
-    left:170;
+    left:120;
     transform:rotate(90deg);
  }
  .background-2 #arrow-prompt p::before {
     opacity: 1;
     content: "2/2";
  }
+
+//  .grad-animate {
+//   background: linear-gradient(-40deg, pink 0%, blue 48%, green 100%);
+//  }
+// .svg-style .stop-1{
+//   stop-color: pink !important;
+//  }
+// *[stroke='url(#Gradient1)'], *[fill='url(#Gradient1)'], #Combined-Shape {
+//  fill: black;
+//  stroke: blue;
+// }
+// *[stroke='url(#Gradient1)'], *[fill='url(#Gradient1)'], #Combined-Shape {
+//  fill: black;
+//  stroke: blue;
+// }
+

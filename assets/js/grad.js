@@ -17,7 +17,7 @@ let destColor = 1
 let bumper
 let go = [[180,236,81], [83,160,254], [48,35,174]]
 
-function update() {
+window.update = function update() {
     var col1 = `rgb(${Math.round(go[0][0])}, ${Math.round(go[0][1])}, ${Math.round(go[0][2])})`
     var col2 = `rgb(${Math.round(go[1][0])}, ${Math.round(go[1][1])}, ${Math.round(go[1][2])})`
     var col3 = `rgb(${Math.round(go[2][0])}, ${Math.round(go[2][1])}, ${Math.round(go[2][2])})`
@@ -72,12 +72,11 @@ async function bumpGrad(){
     function timeout(ms) {
         return new Promise(resolve => setTimeout(transition, ms));
     }
-    await timeout(2500)
+    await timeout(2700)
   }
 }
 
 function transition() {
  bumper = setInterval(bumpGrad ,40);
 }
-
-transition()
+setTimeout(transition, 2000)

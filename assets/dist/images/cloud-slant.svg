@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1065px" height="182px" viewBox="0 0 1065 182" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>cloud</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="cloud" transform="translate(1.000000, 0.000000)">
+            <g id="Group" stroke-linecap="square" transform="translate(171.981018, 81.821637)" stroke="#6ABAE3" stroke-width="2">
+                <path d="M5.12510785,0.239480816 L5.12510785,17.9610612" id="Line"></path>
+                <path d="M5.3581965,15.0872914 L9.99519884,19.2164645" id="Line-Copy-2" transform="translate(7.676698, 17.151878) scale(-1, 1) translate(-7.676698, -17.151878) "></path>
+                <path d="M0.255016062,15.0872914 L4.8920184,19.2164645" id="Line-Copy-3"></path>
+            </g>
+            <path d="M42.6358935,126.871345 C97.8310122,126.871345 142.575497,103.171237 142.575497,73.9356725 C142.575497,44.7001079 97.8310122,21 42.6358935,21 C-12.5592252,21 1.94921875,44.7001079 1.94921875,73.9356725 C1.94921875,103.171237 -12.5592252,126.871345 42.6358935,126.871345 Z" id="Oval-Copy-Copy" stroke="#EFEFEF" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <ellipse id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="931.903365" cy="109.526316" rx="132.096635" ry="59.7660818"></ellipse>
+            <ellipse id="Oval-Copy" stroke="#EFEFEF" fill="#FFFFFF" fill-rule="nonzero" cx="757.939603" cy="93.9356725" rx="99.9396031" ry="52.9356725"></ellipse>
+            <ellipse id="Oval-Copy-2" stroke="#EFEFEF" fill="#FFFFFF" fill-rule="nonzero" cx="610.46937" cy="87.3274854" rx="99.9396031" ry="66.5964912"></ellipse>
+            <ellipse id="Oval-Copy-4" stroke="#EFEFEF" fill="#FFFFFF" fill-rule="nonzero" cx="379" cy="67.5204678" rx="116" ry="66.5964912"></ellipse>
+            <ellipse id="Oval-Copy-3" stroke="#EFEFEF" fill="#FFFFFF" fill-rule="nonzero" cx="482.566005" cy="77.9122807" rx="103.705781" ry="66.5964912"></ellipse>
+            <ellipse id="Oval-Copy-6" stroke="#EFEFEF" fill="#FFFFFF" fill-rule="nonzero" cx="211.638482" cy="82.8245614" rx="145.638482" ry="81.1754386"></ellipse>
+            <polygon id="Rectangle-11" fill="#FFFFFF" fill-rule="nonzero" points="0.226658314 76.0584795 1064 98.5429688 1064 181.929824 0.226658314 181.929824"></polygon>
+            <rect id="Rectangle-12" fill="#FFFFFF" fill-rule="nonzero" x="312" y="32" width="45.271786" height="48.6666667"></rect>
+            <rect id="Rectangle-12-Copy-4" fill="#FFFFFF" fill-rule="nonzero" x="549" y="43" width="45.271786" height="48.6666667"></rect>
+            <rect id="Rectangle-12-Copy-3" fill="#FFFFFF" fill-rule="nonzero" x="375" y="27" width="45.271786" height="48.6666667"></rect>
+            <rect id="Rectangle-12-Copy-3-Copy" fill="#FFFFFF" fill-rule="nonzero" x="61" y="42.7017544" width="45.271786" height="81.9649123"></rect>
+            <rect id="Rectangle-12-Copy" fill="#FFFFFF" fill-rule="nonzero" x="685.77308" y="60" width="45.271786" height="48.6666667"></rect>
+            <rect id="Rectangle-12-Copy-2" fill="#FFFFFF" fill-rule="nonzero" x="839.953408" y="79.2748538" width="45.271786" height="48.6666667"></rect>
+        </g>
+    </g>
+</svg>
