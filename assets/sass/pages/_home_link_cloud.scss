@@ -35,3 +35,10 @@
 #link-cloud-main-text {
     z-index: 9;
 }
+
+// LARGE SIZES
+@media (min-width: 868px){
+  #link-box{
+   width: 33vw;
+  }
+}

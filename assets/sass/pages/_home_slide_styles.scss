@@ -48,7 +48,34 @@
   align-items: center;
   justify-content:center;
 }
-@media (max-width: 768px), (max-height:570px) {
+
+// Height adjustments before XS break
+@media (max-height: 600px), (max-width: 768px) {
+  #citizenvoice.scroll-page, #link-cloud.scroll-page {
+    padding: 0px;
+    padding-top:60px;
+    padding-right: 15px;
+    padding-left: 5vw;
+  }
+  .tablet-hide {
+    display:none;
+  }
+}
+@media (max-height: 500px), (max-width: 768px) {
+  #citizenvoice.scroll-page, #link-cloud.scroll-page {
+    padding: 0px;
+    padding-top:10px;
+    padding-right: 15px;
+    padding-left: 5vw;
+  }
+  .tablet-hide {
+    display:none;
+  }
+}
+
+
+//XS BREAK STYLE
+@media (max-width: 768px) {
   body {
     background-color: white !important;
     text-align:center;
@@ -170,7 +197,7 @@
   }
 }
 
-@media (max-width: 600px), (max-height:570px) {
+@media (max-width: 600px) {
 
   #circle-container {
     background-color: white;

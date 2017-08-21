@@ -2,46 +2,14 @@
 
     .shape {
       position: absolute;
+      min-width:30px !important;
+      min-height: 30px !important;
       opacity: 1;
       filter: drop-shadow( -18px -13px 1px #DDDDDD );
     }
-    #morph-circ-sq-container{
-      width:50px;
-      height:50px;
-      bottom:240;
-      left:160;
-    }
-    #morph-circ-sq-outer{
-      background: linear-gradient(-90deg,rgb(180,236,81) 0%,rgb(83,160,254) 48%, rgb(48,35,174)100%);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      width:100%;
-      height:100%;
-      animation: 5s linear 0s infinite alternate forwards running morphSqCirc;
-    }
-    #morph-circ-sq-inner {
-      background-color: white;
-      position:relative;
-      width:70%;
-      height:70%;
-      animation: 5s linear 0s infinite alternate forwards running morphSqCirc;
-    }
-    #morph-circ-sq-inner:before {
-      content: "";
-      position: absolute;
-      background-color: white;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: -1;
-      box-shadow: -18px -13px 1px white;
-      animation: 5s linear 0s infinite alternate forwards running morphSqCirc;
-    }
     #cross-1{
-      width:20px;
-      height:20px;
+      width:2vw;
+      height:1.5vw;
       transform:rotate(20deg);
       top:110px;
       left:300px;
@@ -49,8 +17,10 @@
     }
 
     #cross-2{
-      width:30px;
-      height:30px;
+      width: 3vw;
+      height: 2.5vw;
+      // width:30px;
+      // height:30px;
       transform:rotate(20deg);
       top:140px;
       right:180px;
@@ -68,41 +38,26 @@
       animation-delay: 0.5s
     }
     #square-1 {
-      width:40px;
-      height:40px;
+      width:3vw;
+      height:3.1vw;
+      // width:40px;
+      // height:40px;
       transform:rotate(20deg);
       bottom:280px;
       left:160px;
     }
-    #square-2 {
-      display:none
-      // transform:skewX(0deg);
-      // width:40px;
-      // height:40px;
-      // transform:rotate(-6deg);
-      // bottom:20vh;
-      // right:20vw;
-      // animation: 12s cubic-bezier(0.68, -0.95, 0.265, 1.95) 0s infinite alternate none running skewSquare;
-    }
-    #straight-line {
-      display:none;
-      width:20px;
-      height:20px;
-      border-radius:10px;
-      left:25%;
-      bottom:90;
-      transform:rotate(0deg);
-      animation: 15s ease 0s infinite normal none running growLine;
-    }
+
     #triangle-1{
-      width:50px;
-      height:50px;
+      width: 5vw;
+      height: 4vw;
+      // width:50px;
+      // height:50px;
       left:35vw;
       bottom: 15vh;
     }
     #semi-circle-1{
-      width:50px;
-      height:50px;
+      width:5vw;
+      height:4vw;
       top:220;
       right:370;
     }
@@ -111,8 +66,10 @@
       transform-origin: 40% 50%;
     }
     #swing-circ{
-      width:40px;
-      height:40px;
+      width: 3.2vw;
+      height: 3vw;
+      // width:40px;
+      // height:40px;
       bottom:150;
       right:300;
       border-radius:50%;
@@ -124,8 +81,12 @@
       height:60%;
     }
     #wavy-line {
-      top:150;
-      right:500;
+      left:39vw;
+      top:10vw;
+      // top:150;
+      // left:500;
+      width:6vw;
+      height:4vw;
     }
 }
 
@@ -231,7 +192,13 @@
   }
 }
 
+// LARGE SIZES
+@media (min-width: 868px){
 
+}
+
+
+// SMALL SIZES
 @media (max-width: 888px) {
   #home {
     #square-1 {
