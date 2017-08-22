@@ -6,27 +6,23 @@
 
     #icons {
       position:absolute;
+      width: 20px;
       left:43;
       bottom:180;
       display:flex;
+      justify-content:space-around;
+      height:150px;
       flex-direction:column;
       a {
         width:100%;
         height:30px;
-        margin-bottom: 13px;
       }
       img {
-        width: 15px;
+        width: 100%;
         transition: all 0.5s;
       }
-      #cp {
-        width:26px;
-        margin-left: -5px;
-      }
-      #gh{
-        width:18px;
-        margin-left: -1px;
-        margin-top: 6px;
+      #linkedin{
+        width: 95%;
       }
       img:hover {
         opacity:0.9;
@@ -74,5 +70,30 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 420px){
+  #home {
+      #landing {
+        h1{
+          font-size: 33px;
+          .word-cutout img {
+            height: 37px;
+          }
+        }
+      }
+      #border-cover {
+        top: -1px;
+        right: -1px;
+        left: -1px;
+        bottom: -1px;
+      }
+      #logo, #icons {
+        left: 20px !important;
+      }
+      #arrow-prompt {
+        left: -75px;
+      }
   }
 }

@@ -50,35 +50,54 @@
 }
 
 // Height adjustments before XS break
-@media (max-height: 600px), (max-width: 768px) {
-  #citizenvoice.scroll-page, #link-cloud.scroll-page {
-    padding: 0px;
-    padding-top:60px;
-    padding-right: 15px;
-    padding-left: 5vw;
-  }
-  .tablet-hide {
-    display:none;
+@media (max-height: 600px) {
+  @media (min-width: 768px) {
+    #citizenvoice.scroll-page, #link-cloud.scroll-page {
+      padding: 0px;
+      padding-top:60px;
+      padding-right: 20px;
+      padding-left: 5vw;
+    }
+    .tablet-hide {
+      display:none;
+    }
   }
 }
-@media (max-height: 500px), (max-width: 768px) {
-  #citizenvoice.scroll-page, #link-cloud.scroll-page {
-    padding: 0px;
-    padding-top:10px;
-    padding-right: 15px;
-    padding-left: 5vw;
-  }
-  .tablet-hide {
-    display:none;
+@media (max-height: 500px){
+  @media (min-width: 768px) {
+    #citizenvoice.scroll-page, #link-cloud.scroll-page {
+      padding: 0px;
+      padding-top:10px;
+      padding-right: 15px;
+      padding-left: 5vw;
+    }
+    .tablet-hide {
+      display:none;
+    }
   }
 }
 
 
 //XS BREAK STYLE
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   body {
     background-color: white !important;
     text-align:center;
+  }
+  #arrow-prompt {
+    position: absolute !important;
+    & ::after {
+      transform: rotate(0deg) !important;
+      left: 199 !important;
+      bottom: -27 !important;
+      font-size: 19px !important;
+    }
+    span {
+      opacity: 1 !important;
+    }
+    & ::before {
+      opacity: 0 !important;
+    }
   }
   #home{
     display: initial;
@@ -86,11 +105,11 @@
     position:static;
     margin-top:0px;
     margin-bottom: 0px;
-    min-height: 100vh;
+    // min-height: 100vh;
    }
   }
   #home #citizenvoice{
-    height:700px;
+    height:600px;
     padding-top: 50px;
     overflow: hidden;
   }
@@ -169,10 +188,10 @@
     left:0px;
   }
   #home #link-cloud {
-        overflow: hidden;
+    overflow: hidden;
     outline:20px solid #f8f8f8;
     background-color: #f8f8f8;
-    height:990px;
+    height:820px;
     padding-bottom:0px;
     border-bottom:40px solid white;
     padding-top: 80px;
@@ -181,7 +200,7 @@
     width: 50vw;
     bottom: 10;
     max-width: 370px;
-    left: 17vw;
+    left: calc(50% - 25vw);
   }
   #home #lc-background {
     bottom: -70px;
@@ -217,13 +236,18 @@
    width: 160px;
   }
   #home #link-box {
-    width: 70vw;
+    width: 60vw;
     bottom: 10;
     max-width: 370px;
-    left: 17vw;
+    left: calc(50% - 30vw);
   }
   #home #lc-background {
     bottom: -20px;
     left: -40px;
   }
 }
+
+
+@media (max-width: 400px) {
+
+  }

@@ -1,3 +1,8 @@
+#link-cloud {
+  #role h4, #year h4, #platform h4, #period {
+    color:#6fc4ef;
+  }
+}
 #link-box{
  position:absolute;
  bottom: 10vw;
@@ -28,9 +33,9 @@
 #lc-wrapper {
   color: black;
 }
-#link-cloud-main-text :nth-child(3) {
-  padding-top:10px;
-}
+// #link-cloud-main-text :nth-child(3) {
+//   padding-top:10px;
+// }
 
 #link-cloud-main-text {
     z-index: 9;
