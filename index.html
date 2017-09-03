@@ -1,9 +1,9 @@
 <html>
   <head>
+  <link href="https://fonts.googleapis.com/css?family=Arvo|Droid+Sans|Lato:300|Lora|Merriweather|Open+Sans|Oswald:300,400|Playfair+Display|Roboto+Slab|Roboto:300,400|Ubuntu" rel="stylesheet">
     <title>My website</title>
       <script src="assets/dist/bundle.js"></script>
   </head>
-
   <input style="display:none" type="checkbox" id="menu-toggle">
   <label for="menu-toggle" id="burger-button">
     <div class="menu-collapsed" id="menu-expanded">
@@ -15,7 +15,7 @@
               <textarea  name="sender-message" placeholder = ""></textarea>
               <input type="email" name="sender-email" placeholder="Your email">
               <div id="buttons" class="col-xs-12">
-                <input type="submit" value="Send">
+                <input type="submit" onClick="window.submitForm()" href="javascript:void()" value="Send">
                 <button type="button" onClick="window.hideForm()"> Back</button>
               </div>
           </form>
@@ -36,6 +36,10 @@
 
 
   <body id="home" onload="window.update(), window.domLoaded(), window.animationScripts()">
+<!--    <div class="bg-1"></div>
+   <div class="bg-2"></div>
+   <div class="bg-3"></div>
+   <div class="bg-4"></div> -->
       <a id="logo" href="/">
         <img  src="./assets/dist/images/logo.svg" alt="">
       </a>
@@ -62,10 +66,14 @@
           <span id="border-cover"></span>
         </span>
         and
-        <span class = "grad-animate word-cutout">
+        <div class = "underline-container">
+          <div class="underline grad-animate"></div>
+          <span>Develop</span>
+        </div>
+<!--         <span class = "grad-animate word-cutout">
           <img src="./assets/dist/images/develop-cutout.svg" alt="">
           <span id="border-cover"></span>
-        </span>
+        </span> -->
         for the web.
       </h1>
 
@@ -116,7 +124,7 @@
       </div>
 
 
-      <div class = "shape" id = "cross-3">
+<!--       <div class = "shape" id = "cross-3">
         <svg width="100%" height="100%" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <defs>
             <linearGradient id="Gradient1">
@@ -138,7 +146,7 @@
               </g>
           </g>
         </svg>
-      </div>
+      </div> -->
 
       <div class = "shape" id = "cross-2">
         <svg width="100%" height="100%" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -164,7 +172,7 @@
         </svg>
       </div>
 
-      <div class = "shape" id = "wavy-line">
+<!--       <div class = "shape" id = "wavy-line">
         <svg width="100%" height="100%" viewBox="0 -10 80 55">
         <defs>
             <linearGradient id="Gradient1">
@@ -186,7 +194,7 @@
             </g>
           </g>
         </svg>
-      </div>
+      </div> -->
 
       <div class = "shape" id = "swing-circ">
         <svg viewBox="-50 -50 550 550" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -301,7 +309,7 @@
           </div>
           <span id="post-tag" class="animate-post-tag animated">@</span>
           <img id="tagged-avi" class="animate-post-tag animated" src="assets/dist/images/tag.svg" alt="">
-          <span id="post-tag" class="post-tag-2 animate-post-tag animated">,</span>
+          <span id="post-tag" class="post-tag-2 animate-post-tag animated">@</span>
           <img id="tagged-avi" class="tagged-avi-2 animate-post-tag animated" src="assets/dist/images/tag.svg" alt="">
           <div id="triangle-green" class="animate-pointer animated">
             <div id="triangle-white" class="animate-pointer animated"></div>
@@ -331,7 +339,7 @@
         </div>
         <a id="play-btn-container" href="" onClick="window.startAnimation(event)" style="position:absolute; width:300px height:300px ">
           <div id="play-button" class="animated">
-            <svg width="170px" height="170px" viewBox="0 0 114 114" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg width="140px" height="170px" viewBox="0 0 114 114" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
                     <circle id="path-1" cx="53.6749992" cy="53.6749992" r="53.6749992"></circle>
                     <filter x="-3.3%" y="-3.3%" width="108.4%" height="108.4%" filterUnits="objectBoundingBox" id="filter-2">
@@ -376,7 +384,7 @@
                         </g>
                         <g id="Triangle-3" fill-rule="nonzero">
                             <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
-                            <use fill="url(#linearGradient-5)" fill-rule="evenodd" xlink:href="#path-6"></use>
+                            <use fill="#D0F3D0" fill-rule="evenodd" xlink:href="#path-6"></use>
                         </g>
                     </g>
                 </g>
@@ -414,26 +422,26 @@
         <div class="col-sm-6 animated" id="citizen-voice-main-text">
           <h1 class="tablet-hide">01<span id="period">.</span></h1>
           <h1>Citizen Voice</h1>
-          <p>Citizen Voice is a civi-tech webapp for connecting people with their local politicians so they can voice issues that matter to them. Currently we are a team of three from different parts of the world. In the coming year we are trialing the app in Barcelona.</p>
+          <p class="main-text">Citizen Voice is a civi-tech webapp for connecting people with their local politicians so they can voice issues that matter to them. Currently we are a team of three from different parts of the world. In the coming year we are trialing the app in Barcelona.</p>
           <div class="col-spec-wrapper">
-            <div class="col-xs-4" id="role">
+            <div class="col-xs-5 col-sm-5 col-md-4" id="role">
               <h4>Role</h4>
               <p>Founder</br>
-               Developer</br>
-               Designer</p>
+               Developer / Designer</p>
             </div>
             <div class="col-xs-4" id="platform">
               <h4>Technolgy</h4>
               <p> Ruby on Rails </p>
             </div>
-            <div class="col-xs-4" id="year">
+            <div class="col-xs-3" id="year">
               <h4>Year</h4>
               <p>2016</p>
             </div>
+            <div class="col-xs-12 btn-container">
+                <button id="cv-button"   class="view-project">View Project</button>
+            </div>
           </div>
-          <div id="cv-button-wrapper">
-            <button id="cv-button" class="view-project">View Project</button>
-          </div>
+
         </div>
       </div>
     </div>
@@ -443,25 +451,24 @@
         <div class="col-sm-6 animated" id="link-cloud-main-text">
           <h1 class="tablet-hide">02<span id="period">.</span></h1>
           <h1>Link Cloud</h1>
-          <p>This is the type all about the project. It was a lot of fun and we had three members on the team, myself, Erin and Andreas. This is something I worked on to allow teachers to share links with students in an easy and organised way. It uses bundels to group content and allows easy sharing</p>
+          <p class="main-text">This is the type all about the project. It was a lot of fun and we had three members on the team, myself, Erin and Andreas. This is something I worked on to allow teachers to share links with students in an easy and organised way. It uses bundels to group content and allows easy sharing</p>
           <div class="col-spec-wrapper">
-            <div class="col-xs-4" id="role">
+            <div class="col-xs-5 col-sm-5 col-md-4" id="role">
               <h4>Role</h4>
               <p>Founder</br>
-              Developer</br>
-              Designer </p>
+              Developer / Designer </p>
             </div>
             <div class="col-xs-4" id="year">
               <h4>Technology</h4>
               <p>Node.Js Express/React MongoDB </p>
             </div>
-            <div class="col-xs-4" id="platform">
+            <div class="col-xs-3" id="platform">
               <h4>Year</h4>
               <p>2017</p>
             </div>
-          </div>
-          <div id="lc-btn-wrapper">
-            <button id="lc-button" class="view-project">View Project</button>
+            <div class="col-xs-12 btn-container">
+              <button id="lc-button" class="view-project">View Project</button>
+            </div>
           </div>
         </div>
         <img id="lc-background" src="assets/dist/images/cloud-slant.svg" alt="">

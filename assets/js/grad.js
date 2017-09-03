@@ -1,5 +1,5 @@
 let tutifruti = [[255,217,193], [245,153,191], [225,88,98]];
-let skinColor =  [[250,177,95], [236,213,190], [250,241,195]];
+let skinColor =  [[255,177,95], [256,213,190], [255,241,195]];
 let blueGreen = [[180,236,81], [83,160,254], [48,35,174]];
 let orange = [[250,217,97], [249,163,63], [247,107,28]];
 let purple = [[48,35,174], [125,73,195], [200,109,215]];
@@ -11,7 +11,7 @@ let midnight = [[21,8,173], [49,112,198], [172,203,238]];
 let green = [[24,104,101], [56,185,90], [215,249,192]];
 let white = [[175,177,206], [210,217,220], [245,247,260]];
 
-let colors = [ blueGreen, orange, midnight, skinColor]
+let colors = [ blueGreen, midnight, orange, skinColor]
 let currentColor = 0
 let destColor = 1
 let bumper

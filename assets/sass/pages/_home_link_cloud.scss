@@ -6,9 +6,9 @@
 #link-box{
  position:absolute;
  bottom: 10vw;
- left: 9vw;
- width: 400px;
- max-width: 40%;
+ left: 10vw;
+ width: 35%;
+ max-width: 430px;
  z-index: 5;
  opacity: .9
 }
@@ -42,8 +42,8 @@
 }
 
 // LARGE SIZES
-@media (min-width: 868px){
+@media (min-width: 1300px){
   #link-box{
-   width: 33vw;
+   min-width: 500px;
   }
 }

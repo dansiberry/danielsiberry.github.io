@@ -2,7 +2,23 @@
   #landing{
     display: flex;
     align-items: center;
-    padding-top: 10vh;
+    padding-top: 7vh;
+    // background-image: url("/assets/dist/images/grad-bg.jpg");
+    // background-size: cover;
+
+   .underline {
+     position:absolute;
+     bottom:-0px;
+     height:9px;
+     left:8px;
+     width: 90%;
+     opacity:.6;
+     transform:rotate(2deg);
+   }
+   .underline-container{
+    display:inline-block;
+    position:relative;
+   }
 
     #icons {
       position:absolute;
@@ -60,7 +76,7 @@
 }
 
 //large styles
-@media (min-width: 1100px){
+@media (min-width: 1300px){
   #home {
     #landing{
       h1{

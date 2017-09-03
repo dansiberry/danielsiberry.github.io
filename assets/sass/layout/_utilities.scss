@@ -1,19 +1,24 @@
 p {
   color: black;
-  font-family: 'Inconsolata-Regular', sans-serif;
+  font-family: 'futura-pt', sans-serif;
 }
-a:hover {
-  text-decoration: none;
+a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
+}
+a {
+  text-decoration:none;
 }
 h1, h2, h3, h4 {
   font-family: 'museo-sans', sans-serif;
+  color: black;
 }
+
 
 body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 $delay : 1s;
@@ -23,9 +28,11 @@ $cit-green : #65D565;
 // $cit-green: #65CC66;
 $half-cit-green : #d0f3d0;
 $light-grey : #EEEEEE;
-$cit-gradient : linear-gradient(to bottom, #86d486, #58c158);
+$cit-gradient : linear-gradient(to bottom, #5bca5b, #58c158);
+$lc-gradient : linear-gradient(to bottom, #70C5F1, #72c2ea);
 
-$lc-gradient : linear-gradient(to bottom, #70C5F1, #66B3DB);
+$cv-btn : #73d073;
+$lc-btn : #70C5F1;
 
 $button-shadow : 3px 3px 5px #e0e0e0;
 
@@ -43,6 +50,31 @@ $button-shadow : 3px 3px 5px #e0e0e0;
 
 
 //large styles
-@media (min-width: 1100px){
+@media (min-width: 1300px){
   h1 { font-size: 3vw; }
+  h2 { font-size: 2.5vw; }
+  h3 { font-size: 2vw; }
+  h4 { font-size: 1.7vw; }
+  p {font-size: 19px;  }
+}
+
+
+.bg-1 {
+  position: absolute;
+    height: 120%;
+    width: 100%;
+    top: -20%;
+    left: -40%;
+    box-shadow: 20px 50px 95px white;
+    border-radius: 50%;
+}
+
+.bg-2 {
+  position: absolute;
+    height: 120%;
+    width: 100%;
+    top: -20%;
+    left: -40%;
+    box-shadow: 20px 50px 95px white;
+    border-radius: 50%;
 }

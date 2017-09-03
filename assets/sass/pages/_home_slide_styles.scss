@@ -30,6 +30,16 @@
   }
 }
 
+.main-text {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.col-spec-wrapper h4 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
   .backgroud-0 {
     background-color: white;
   }
@@ -37,7 +47,7 @@
     background-color: white;
   }
   .background-2{
-    background-color: #EFEFEF;
+    background-color: #f8f8f8;
   }
 
 
@@ -49,8 +59,17 @@
   justify-content:center;
 }
 
+.tablet-hide {
+  font-family: 'museo-sans-500';
+  margin-bottom: -10px;
+  font-size:45px;
+}
+h1.tablet-hide {
+  opacity:.2;
+}
+
 // Height adjustments before XS break
-@media (max-height: 600px) {
+@media (max-height: 630px) {
   @media (min-width: 768px) {
     #citizenvoice.scroll-page, #link-cloud.scroll-page {
       padding: 0px;
@@ -83,6 +102,14 @@
   body {
     background-color: white !important;
     text-align:center;
+  }
+  #home #landing .underline-container .underline {
+    bottom: 0px;
+    height: 10px;
+    left:6px;
+  }
+  #home #landing.layer-1 h1 {
+    line-height: 49px;
   }
   #arrow-prompt {
     position: absolute !important;
@@ -177,28 +204,19 @@
   #link-cloud-main-text > p, #citizen-voice-main-text > p {
     padding:10px;
   }
-  #lc-btn-wrapper, #cv-button-wrapper {
-    position:relative;
-    width:1px;
-    height: 1px;
-    margin-left: calc(50% - 65px);
-  }
-  #lc-button, #cv-button {
-    width: 130px;
-    left:0px;
-  }
+
   #home #link-cloud {
     overflow: hidden;
     outline:20px solid #f8f8f8;
     background-color: #f8f8f8;
-    height:820px;
+    height:840px;
     padding-bottom:0px;
-    border-bottom:40px solid white;
+    border-bottom:20px solid white;
     padding-top: 80px;
   }
   #home #link-box {
     width: 50vw;
-    bottom: 10;
+    bottom: -10;
     max-width: 370px;
     left: calc(50% - 25vw);
   }
@@ -237,7 +255,7 @@
   }
   #home #link-box {
     width: 60vw;
-    bottom: 10;
+    bottom: -25;
     max-width: 370px;
     left: calc(50% - 30vw);
   }
