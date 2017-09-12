@@ -7,10 +7,10 @@ button.view-project{
   position:static;
   bottom: -70px;
   left:15px;
-  height:45px;
+  height:42px;
   border-radius: 50px;
   padding: 16px 25px;
-  line-height: 15px;
+  line-height: 12px;
 }
 
 .btn-container {
@@ -60,12 +60,12 @@ button.view-project{
 
 button#cv-button{
   background-color: $cv-btn;
-  box-shadow: $button-shadow;
+  // box-shadow: $button-shadow;
 }
 
 button#lc-button{
   background-color: $lc-btn;
-  box-shadow: $button-shadow;
+  // box-shadow: $button-shadow;
     z-index: 99;
 }
 
