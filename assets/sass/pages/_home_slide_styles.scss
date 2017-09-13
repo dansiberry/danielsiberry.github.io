@@ -31,13 +31,19 @@
 }
 
 .main-text {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  max-width: 480px;
 }
 
 .col-spec-wrapper h4 {
   margin-top: 15px;
   margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.col-spec-wrapper p {
+  font-size: 16px;
 }
 
   .backgroud-0 {
