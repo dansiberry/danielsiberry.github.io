@@ -247,6 +247,10 @@
     max-width: 400px;
   }
 
+  .page-2::before {
+  display:none !important;
+}
+
   .intro-blocks-container {
     align-items:left;
     text-align: left;
