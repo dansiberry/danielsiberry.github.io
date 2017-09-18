@@ -76,7 +76,7 @@
   // background-color: blue;
   position: absolute;
   bottom:20px;
-  padding-right: 280px;
+  padding-right: 100px;
   z-index: 99;
   transform: scale(6.2, 0.6);
 }
@@ -145,10 +145,13 @@
     color: #252525;
     max-width: 320px;
    }
+   h1{
+    font-family: 'proxima-nova-bold', sans-serif;
+   }
    p {
     font-size: 18px;
     font-family: 'futura-pt';
-    color: #636363;
+    color: black;
     margin-top: 25px;
     max-width: 320px;
    }
@@ -157,14 +160,14 @@
    }
    h1 {
     margin-bottom: 60px;
-    font-size: 42px;
+    font-size: 39px;
    }
    h3 {
     font-size: 22px;
    }
    h1::after {
     content: "";
-    width:160px;
+    width:200px;
     height:5px;
     position:absolute;
     display:block;
@@ -175,7 +178,7 @@
 }
 
 .page-2 img {
-  width:30vw;
+  width:35vw;
   opacity: 0.9;
 }
 
