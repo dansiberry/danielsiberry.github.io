@@ -22,7 +22,7 @@
   animation: $animation-length linear 0s 1 normal none paused titleOpacityPop;
   h2 {
     padding-bottom: 400px;
-    font-family: 'museo-sans';
+    font-family: 'museo-sans', sans-serif;
     height:0px;
     margin:0px;
     color:#4E4E4E;
@@ -151,7 +151,7 @@
       z-index: 999;
       padding-left: 50px;
       margin-right: -15vw;
-      font-family: 'museo-sans';
+      font-family: 'museo-sans', sans-serif;
       height:0px;
       margin:0px;
       color:#4E4E4E;

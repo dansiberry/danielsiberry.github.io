@@ -1,6 +1,6 @@
 p {
   color: black;
-  font-family: 'futura-pt', sans-serif;
+  font-family: 'futura-pt', 'futura', sans-serif;
 }
 a:hover, a:visited, a:link, a:active{
     text-decoration: none;
@@ -9,7 +9,7 @@ a {
   text-decoration:none;
 }
 h1, h2, h3, h4, h5 {
-  font-family: 'proxima-nova-bold', sans-serif;
+  font-family: 'proxima-nova-bold', "Montserrat" sans-serif;
   color: black;
 }
 h1 {
@@ -19,6 +19,8 @@ h1 {
 body#home   {
   font-size: 18px;
 }
+
+$sans-serif-stack : #d0f3d0;
 
 @media (min-width: 1200px){
   .container {

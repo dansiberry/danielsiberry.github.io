@@ -5,13 +5,15 @@
     }
     #cv-background-front{
       position:absolute;
-      bottom:-5vh;
+      bottom:0vh;
+      right:0px;
       margin-left: -5vw;
       width:105vw;
     }
     #cv-background-back{
       position:absolute;
       bottom:0vh;
+      left: 0px;
       margin-left: -5vw;
       width:100vw;
       opacity: 0.2;

@@ -19,8 +19,8 @@ module.exports = {
       {
         test: /\.js$/,
         include: [
-          path.resolve(__dirname, "assets"),
-          path.resolve(__dirname, "node_modules/jquery")
+          path.resolve(__dirname, "node_modules/jquery"),
+          path.resolve(__dirname, "assets/js")
         ],
         use: [{
           loader: 'babel-loader'
@@ -38,13 +38,15 @@ module.exports = {
       { test: /\.css$/,
         use: [
           'style-loader',
-          'css-loader']
+          'css-loader',
+          'postcss-loader']
       },
       {
         test: /\.(sass|scss)$/,
         use: [
           'style-loader',
           'css-loader',
+          'postcss-loader',
           'sass-loader'
         ]
       },

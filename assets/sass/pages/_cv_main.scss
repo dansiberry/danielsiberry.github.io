@@ -1,6 +1,7 @@
 .cv-container {
   width: 100%;
   height: initial;
+  overflow: hidden;
 }
 
 //Page 1
@@ -42,7 +43,7 @@
 }
 
 .intro-block h5 {
-  font-family: 'futura-pt';
+  font-family: 'futura-pt', sans-serif;
   color: grey;
 }
 .tagline {
@@ -50,14 +51,14 @@
 }
 
 #gotham {
-  font-family:'gothamrnd-bold';
+  font-family:'gothamrnd-bold', sans-serif;
   font-size: 20px;
   color: #303030;
     margin-top: 0px;
 }
 
 #open-sans {
-  font-family: 'Open sans';
+  font-family: 'Open sans', sans-serif;
   font-size: 18px;
   color: #303030;
   margin-top: 0px;
@@ -70,13 +71,13 @@
 .preview-1:after {
   content: "";
   display: block;
-  width:200px;
+  width:100px;
   height: 50px;
-  background: radial-gradient( circle closest-side, #e2e2e2, transparent);
+  background: radial-gradient( circle closest-side, #e2e2e2, rgba(255,255,255,0.1));
   // background-color: blue;
   position: absolute;
   bottom:20px;
-  padding-right: 100px;
+  left: 250px;
   z-index: 99;
   transform: scale(6.2, 0.6);
 }
@@ -125,7 +126,7 @@
   width: 180vw;
   transform:rotate(-12deg);
   height: 600px;
-  background:linear-gradient(to left, #f4f5f5, transparent);
+  background:linear-gradient(to left, #f4f5f5, rgba(255,255,255,0.1));
   position: absolute;
   left:-30vw;
   top: -180px;
@@ -141,7 +142,7 @@
 
 .text-block{
    h1,h2,h3,h4,h5 {
-    font-family: 'museosans-300';
+    font-family: 'museosans-300', sans-serif;
     color: #252525;
     max-width: 320px;
    }
@@ -150,7 +151,7 @@
    }
    p {
     font-size: 18px;
-    font-family: 'futura-pt';
+    font-family: 'futura-pt', sans-serif;
     color: black;
     margin-top: 25px;
     max-width: 320px;

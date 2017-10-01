@@ -25,7 +25,7 @@
   color: $cit-green;
   margin-top: 3px;
   font-size:25px;
-  font-family: 'museo-sans';
+  font-family: 'museo-sans', sans-serif;
   position: absolute;
   border-radius: 5px;
   margin: 0px;
@@ -69,7 +69,7 @@
       cursor:pointer;
      }
      h3 ,a {
-      font-family: 'proxima-nova-bold';
+      font-family: 'proxima-nova-bold', sans-serif;
       color: #ababab;
       font-size: 20px;
       text-decoration: none !important;
@@ -124,6 +124,14 @@
     stroke-opacity:.7;
   animation: 27s linear 0s infinite normal forwards running spinClockwise;
   transform-origin:50% 50%;
+}
+@-moz-document url-prefix() {
+ #play-stroked-path {
+     transform-origin: 48% 47%;
+  }
+ #play-solid-path{
+    display:none;
+ }
 }
 @keyframes spinCounterClockwise {
   0% {

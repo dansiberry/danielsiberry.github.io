@@ -36,7 +36,7 @@ window.update = function update() {
 
 let stepCounter = 0
 let steps = 15
-async function bumpGrad(){
+function bumpGrad(){
   for (let col = 0; col < 3; col++) {
     for (let val = 0; val < 3; val++) {
       if (go[col][val] > colors[destColor][col][val] ){
@@ -72,7 +72,10 @@ async function bumpGrad(){
     function timeout(ms) {
         return new Promise(resolve => setTimeout(transition, ms));
     }
-    await timeout(2700)
+
+    timeout(2700).then(function() {
+
+    });
   }
 }
 
