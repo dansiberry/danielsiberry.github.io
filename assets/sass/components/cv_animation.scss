@@ -29,10 +29,10 @@
   position: absolute;
   border-radius: 5px;
   margin: 0px;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
+  top:0px;
+  bottom:0px;
+  left:0px;
+  right:0px;
   text-align: center;
   background-color: white;
 }
@@ -118,21 +118,23 @@
 #play-stroked-path{
   animation: 24s linear 0s infinite normal forwards running spinCounterClockwise;
   transform-origin:50% 50%;
+  transform-box: fill-box;
   stroke-opacity:.7;
 }
 #play-solid-path{
     stroke-opacity:.7;
+  transform-box: fill-box;
   animation: 27s linear 0s infinite normal forwards running spinClockwise;
   transform-origin:50% 50%;
 }
-@-moz-document url-prefix() {
- #play-stroked-path {
-     transform-origin: 48% 47%;
-  }
- #play-solid-path{
-    display:none;
- }
-}
+// @-moz-document url-prefix() {
+//  #play-stroked-path {
+//      transform-origin: 48% 47%;
+//   }
+//  #play-solid-path{
+//     display:none;
+//  }
+// }
 @keyframes spinCounterClockwise {
   0% {
     transform:rotate(360deg)

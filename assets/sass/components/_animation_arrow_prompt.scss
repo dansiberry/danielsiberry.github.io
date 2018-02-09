@@ -19,17 +19,17 @@
     transition: all 1s;
     opacity:1;
     font-size: 25px;
-    left: 160;
-    top:-6;
+    left: 160px;
+    top:-6px;
     @keyframes pulse {
       0% {
-        left: 160
+        left: 160px
       }
       50% {
-        left: 140
+        left: 140px
       }
       100% {
-        left: 160
+        left: 160px
       }
     }
   }
@@ -40,8 +40,8 @@
     position:absolute;
     transition:all 1s;
     transform:rotate(0deg);
-    left:199;
-    bottom: -27;
+    left:199px;
+    bottom: -27px;
     display: inline-block;
     content: " Projects"
  }
@@ -52,8 +52,8 @@
     position:absolute;
     transition:all 1s;
     transition: 1s;
-    left:160;
-    bottom: -35;
+    left:160px;
+    bottom: -35px;
     display: inline-block;
     transform:rotate(90deg);
     content: "0/2"
@@ -71,8 +71,8 @@
   .background-1 #arrow-prompt p::after, .background-2 #arrow-prompt p::after {
     font-size: 16px;
     position:absolute;
-    bottom: -45;
-    left:120;
+    bottom: -45px;
+    left:120px;
     transform:rotate(90deg);
  }
  .background-2 #arrow-prompt p::before {

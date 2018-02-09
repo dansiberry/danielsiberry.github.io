@@ -1,7 +1,7 @@
 #burger-button {
   position:fixed;
-  top:10;
-  right:10;
+  top:10px;
+  right:10px;
   cursor:pointer;
   z-index: 99;
   width:25px;
@@ -22,8 +22,8 @@
   width: 40px;
   z-index: 99;
   position: fixed;
-  top: 25;
-  right: 30;
+  top: 25px;
+  right: 30px;
   border: 1px solid black;
   border-radius: 50%;
 }
@@ -32,7 +32,7 @@
    transition: all .25s;
    content: "";
    position: absolute;
-   right: 0;
+   right: 0px;
    height: 3px;
    width: 20px;
    border-radius: 15px;
@@ -48,11 +48,11 @@
    z-index: 1;
    cursor: pointer;
    ul {
-       left:0;
+       left:0px;
    padding: 0px 20px;
       margin-top: 65px;
       transition: all 0s;
-      right:10;
+      right:10px;
       // bottom:0px;
    }
 }
@@ -82,15 +82,15 @@
    height: 250px;
    width: 180px;
    border-radius: 0px;
-   right: 10;
-   top:10;
+   right: 10px;
+   top:10px;
    background-color: white;
    border: 1px solid black;
    overflow:hidden;
    ul {
       transition: 0.5s;
       position: absolute;
-      left: 0;
+      left: 0px;
       width:180px;
       z-index: 2;
       margin-top: 65px;
