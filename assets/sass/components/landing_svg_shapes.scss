@@ -67,8 +67,8 @@
     #swing-circ{
       width: 3.9vw;
       height: 3vw;
-      bottom:160;
-      right:100;
+      bottom:160px;
+      right:100px;
       border-radius:50%;
     }
     #inner-swing-circ {
@@ -199,13 +199,13 @@
 @media (max-width: 920px) {
   #home {
     #square-1 {
-      left:100;
+      left:100px;
     }
     #cross-2 {
-      top:240;
+      top:240px;
     }
     #semi-circle-1 {
-      top:150;
+      top:150px;
       right:30vw;
     }
     #wavy-line {

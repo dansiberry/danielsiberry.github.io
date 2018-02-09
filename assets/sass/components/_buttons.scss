@@ -19,16 +19,16 @@ button.view-project{
 
 #page-down {
    position:fixed;
-   top:0;
-   left:0;
+   top:0px;
+   left:0px;
    z-index: 99;
 }
 
 #page-up {
   z-index: 99;
   position:fixed;
-  top:0;
-  left:70;
+  top:0px;
+  left:70px;
 }
 
 #menu-expanded input[type="submit"], #menu-expanded button {
