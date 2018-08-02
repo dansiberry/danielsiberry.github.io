@@ -1,30 +1,70 @@
-#home {
-  #citizenvoice {
-    #role h4, #year h4, #platform h4, #period {
-      color:#65D565;
-    }
-    #cv-background-front{
-      position:absolute;
-      bottom:0vh;
-      right:0px;
-      margin-left: -5vw;
-      width:105vw;
-    }
-    #cv-background-back{
-      position:absolute;
-      bottom:0vh;
-      left: 0px;
-      margin-left: -5vw;
-      width:100vw;
-      opacity: 0.2;
-      transform: scaleX(-1);
-    }
-    // #citizen-voice-main-text :nth-child(3) {
-    //   padding-top:10px;
-    // }
+
+#citizenvoice {
+  #role h4, #year h4, #platform h4, #period {
+    color:#65D565;
   }
+  #cv-background-front{
+    position:absolute;
+    bottom:0vh;
+    right:0px;
+    margin-left: -5vw;
+    width:105vw;
+  }
+  #cv-background-back{
+    position:absolute;
+    bottom:0vh;
+    left: 0px;
+    margin-left: -5vw;
+    width:100vw;
+    opacity: 0.2;
+    transform: scaleX(-1);
+  }
+
+  #play-btn-container {
+    width: 40%;
+    height:60%;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+  }
+
+
+  @media (max-width: 767px) {
+
+      #cv-background-svg{
+          fill: #f8f8f8;
+        }
+        #home #citizenvoice #play-button.animated {
+          width:100vw;
+          left:-40px;
+          padding-bottom: 130px;
+          position:static;
+        }
+        #home #citizenvoice #play-button.animated svg {
+          width: 100px;
+        }
+        #home #citizenvoice #play-button.animated h3 {
+          margin-top: -20px;
+          color: grey;
+        }
+        #home #citizenvoice #cv-background-front {
+          left: 0px !important;
+          bottom: -10vh !important;
+        }
+        #home #citizenvoice #cv-background-back, #home #citizenvoice #cv-background-front {
+         display:none;
+        }
+        #play-btn-container{
+          width:100%;
+          height:100%;
+          display:flex;
+          align-items:flex-end;
+          justify-content:center;
+          text-decoration: none;
+          display:none;
+        }
+  }
+
 }
 
-#role {
-  padding-left: 0px;
-}
+

@@ -271,20 +271,26 @@
   }
 
   .text-block {
-   text-align: center !important;
-   h1,h2,h3,h4,h5 {
-    max-width: none;
-   }
-   p {
-    max-width: none;
-   }
-   h1:after {
-    transform: translate(0px, 10px);
-    left: calc(50% - 80px);
-   }
+
+     max-width: 450px;
+     margin: auto;
+
+     text-align: center !important;
+     h1,h2,h3,h4,h5 {
+      max-width: none;
+     }
+     p {
+      max-width: none;
+     }
+     h1:after {
+      transform: translate(0px, 10px);
+      left: calc(50% - 100px);
+     }
   }
 
-  .intro-page, .page-2, .page-3, .page-4 {
+  .intro-page, .page-2, .page-3, .page-4, .text-block-container, .intro-blocks-container {
+    padding-top: 30px;
+    padding-bottom: 20px;
     height: initial !important;
   }
 }

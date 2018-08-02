@@ -1,0 +1,146 @@
+<html>
+  <head>
+    <link rel="shortcut icon" href="./assets/dist/images/logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Droid+Sans|Lato:300|Lora|Merriweather|Open+Sans|Oswald:300,400|Playfair+Display|Roboto+Slab|Roboto:300,400|Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+      <title>Discover Craniosacral Case Study</title>
+      <script src="assets/dist/bundle.js"></script>
+  </head>
+  <body>
+
+  <input style="display:none" type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" id="burger-button">
+     <div class="menu-collapsed" id="menu-expanded">
+       <div id="circle-container">
+         <div class="bar"></div>
+       </div>
+       <nav>
+          <form id="contact-box" action="https://formspree.io/dansiberry1@gmail.com" method="POST">
+              <textarea  name="sender-message" placeholder = ""></textarea>
+              <input type="email" name="sender-email" placeholder="Your email">
+              <div id="buttons" class="col-xs-12">
+                <input type="submit" onClick="window.submitForm()" href="javascript:void()" value="Send">
+                <button type="button" onClick="window.hideForm()"> Back</button>
+              </div>
+          </form>
+          <ul id="menu-box">
+             <li><a href="/">Home</a></li>
+             <li><a onClick="window.showForm()" href="javascript:void()">Contact</a></li>
+             <li id="coming-soon">
+               <a href = "" > Photography </br>
+               Coming soon </a>
+             </li>
+          </ul>
+       </nav>
+   </div>
+<!--    <div id="menu-shadow">
+     <div id="stripes"></div>
+   </div> -->
+  </label>
+
+
+  <a id="logo" href="/">
+    <img  src="./assets/dist/images/logo.svg" alt="">
+  </a>
+
+
+
+    <div class="cv-container">
+
+      <section class="intro-page container">
+         <div class="col-md-4 col-md-offset-2 col-sm-6 intro-blocks-container">
+           <div class="intro-block">
+             <h5>Logo</h5>
+             <img src="./assets/dist/images/cranio-logo.png" alt="">
+           </div>
+           <div class="intro-block">
+            <h5>Tag-line</h5>
+            <p class="tagline">"Local politics made easy"</p>
+           </div>
+           <div class="intro-block">
+            <h5>Fonts</h5>
+            <h3 id="gotham">Gotham Rounded Bold</h3>
+            <h3 id="open-sans">Open Sans 200</h3>
+           </div>
+           <div class="intro-block">
+            <h5>Colors</h5>
+            <div class="colors">
+              <div class="col-sm-3 col-xs-4">
+                <div class="light-grey-swatch swatch"></div>
+                <p>#F3F3F3</p>
+              </div>
+              <div class="col-sm-3 col-xs-4">
+                <div class="grey-swatch swatch"></div>
+                <p>#60C860</p>
+              </div>
+              <div class="col-sm-3 col-xs-4">
+                <div class="light-green-swatch swatch"></div>
+                <p>#323433</p>
+              </div>
+            </div>
+           </div>
+         </div>
+         <div class="col-md-4 col-sm-6 preview preview-1 xs-hide">
+          <video width="520" autoplay loop height="440" controls >
+            <source src="./assets/dist/images/ipad-white.mp4" type="video/mp4">
+<!--             <source src="./assets/dist/images/ipad-white.mp4" type="video/ogg"> -->
+          Your browser does not support the video tag.
+          </video>
+<!--            <img id="preview-1-img" src="./assets/dist/images/ipad-white.mov" alt=""> -->
+         </div>
+      </section>
+
+
+      <section class="page-2 container">
+        <div class=" col-md-5 col-md-offset-1 col-sm-6 text-block-container">
+          <div class="text-block">
+            <div class="header-block">
+              <h5>01 - Planning</h5>
+              <h1>Starting with the User</h1>
+            </div>
+            <h3 topic-header>A go-to platform for engaging in local politics</h3>
+            <p>We identified pain-points for an individual who is trying to engage with local politicians about a concern. We created user stories to map the possible paths through the product. </br></br> Using this models as our generic user, we generated ideas about what functionality would be essential for the product.</p>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-6 img-container xs-hide">
+           <img id="team-img" src="./assets/dist/images/team3.jpg" alt="">
+        </div>
+      </section>
+
+
+      <section class="page-3 container">
+        <div class=" col-md-5 col-md-offset-1 col-sm-6 text-block-container">
+          <div class="text-block">
+            <div class="header-block">
+              <h5>02 - The Sollution</h5>
+              <h1>Scalable web-app platform</h1>
+            </div>
+            <h3 topic-header>Multi-language access</h3>
+            <p>Built on Ruby on Rials with a ProstgreSQL as a datbase, the product is an app that users can access through the browser. This allows for easy mobile access without download.</br> </br>As a trial the product is being launched in Barcelona and is available in English, Spanish and Catalan. </p>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-6 img-container xs-hide">
+           <img id="team-img" src="./assets/dist/images/preview-2.jpg" alt="">
+        </div>
+      </section>
+           <img class="xs-hide" id="green-graphic" src="./assets/dist/images/green-graphic.png" alt="">
+      <section class="page-4 container">
+        <div class="xs-hide col-sm-7 img-container">
+          <img id="preview-laptop" src="./assets/dist/images/preview-laptop-new-2.png" alt="">
+        </div>
+        <div class=" col-sm-5 col-md-4 text-block-container">
+          <div class="text-block">
+            <div class="header-block">
+              <h5>03 - UX & testing</h5>
+              <h1>User-friendly Design</h1>
+            </div>
+            <h3 topic-header>Making local politics smart and simple</h3>
+            <p>A simple design and light user-interface allows makes the platform approachable. </br> Users can easily connect with local politicans, share content through social media and search issues by locality.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </body>
+</html>
