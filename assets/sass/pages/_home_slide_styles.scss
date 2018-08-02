@@ -1,7 +1,7 @@
 #home {
   transition: background-color 1s;
   .scroll-page {
-    padding: 20vh 5vw 5vh;
+    padding: 15vh 5vw 5vh;
     position:fixed;
     width:100%;
     height: 100vh;
@@ -96,7 +96,7 @@
 }
 
 //XS BREAK STYLE
-@media (max-width: 767px) {
+@media (max-width: 767px), (max-height: 650px) {
   body {
     background-color: white !important;
     text-align:center;
