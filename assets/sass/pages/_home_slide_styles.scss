@@ -52,16 +52,7 @@
     background-color: #f8f8f8;
   }
 
-
-#play-btn-container {
-  width: 40%;
-  height:60%;
-  display:flex;
-  align-items: center;
-  justify-content:center;
-}
-
-.tablet-hide {
+.slide__title-number {
   font-family: 'museo-sans-500', sans-serif;
   margin-bottom: -10px;
   font-size:45px;
@@ -161,38 +152,7 @@
   button.view-project{
     margin-bottom: -115px;
   }
-  #cv-background-svg{
-    fill: #f8f8f8;
-  }
-  #home #citizenvoice #play-button.animated {
-    width:100vw;
-    left:-40px;
-    padding-bottom: 130px;
-    position:static;
-  }
-  #home #citizenvoice #play-button.animated svg {
-    width: 100px;
-  }
-  #home #citizenvoice #play-button.animated h3 {
-    margin-top: -20px;
-    color: grey;
-  }
-  #home #citizenvoice #cv-background-front {
-    left: 0px !important;
-    bottom: -10vh !important;
-  }
-  #home #citizenvoice #cv-background-back, #home #citizenvoice #cv-background-front {
-   display:none;
-  }
-  #play-btn-container{
-    width:100%;
-    height:100%;
-    display:flex;
-    align-items:flex-end;
-    justify-content:center;
-    text-decoration: none;
-    display:none;
-  }
+
   .col-spec-wrapper {
     padding-left: 5vw;
     padding-right: 5vw;
