@@ -97,6 +97,19 @@
 
 //XS BREAK STYLE
 @media (max-width: 767px), (max-height: 650px) {
+
+  #home {
+    .scroll-page {
+      height: unset;
+    }
+  }
+
+  #home {
+    .scroll-page.scroll-page--home {
+      height: 100vh;
+    }
+  }
+
   body {
     background-color: white !important;
     text-align:center;
@@ -113,6 +126,15 @@
   #home #landing.layer-1 h1 {
     line-height: 49px;
   }
+
+  #citizenvoice {
+    padding-bottom: 0px !important;
+  }
+
+  #cv-background-front {
+    display: none;
+  }
+
   #arrow-prompt {
     position: absolute !important;
     & ::after {
@@ -178,7 +200,7 @@
 
   #home #link-cloud {
     overflow: hidden;
-    outline:20px solid #f8f8f8;
+    // outline:20px solid #f8f8f8;
     background-color: #f8f8f8;
     height:640px;
     padding-bottom:0px;
@@ -189,7 +211,7 @@
     width: 50vw;
     bottom: -10px;
     max-width: 370px;
-    left: calc(50% - 25vw);
+    left: calc(5vw);
   }
   #home #lc-background {
     bottom: -70px;
