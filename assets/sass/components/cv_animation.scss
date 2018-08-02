@@ -543,7 +543,7 @@ img#tagged-avi {
   }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 920px), (max-height: 750px) {
 
   @keyframes animate-grow-box {
     0% {
@@ -574,14 +574,14 @@ img#tagged-avi {
     }
     26%{
       bottom:150px;
-      left:150px;
+      left:180px;
       width:70px;
       height:43px;
       padding:0px;
     }
     28% {
       left:160px;
-      bottom:150;
+      bottom:150px;
       width:150px;
       height:175px;
       opacity:1;
@@ -589,22 +589,22 @@ img#tagged-avi {
     }
     45% {
       left:160px;
-      bottom:150;
+      bottom:150px;
       width:150px;
       height:175px;
       padding:20px 10px;
     }
     49% {
-      left:10vw;
-      bottom:210;
+      left:15vw;
+      bottom:170px;
       width:150px;
       height:175px;
       opacity:1;
       padding:20px 10px;
     }
     50% {
-      left:10vw;
-      bottom:210;
+      left:15vw;
+      bottom:170px;
       width:150px;
       height:175px;
       opacity:1;
@@ -617,8 +617,8 @@ img#tagged-avi {
       opacity:0;
     }
     100% {
-      left:10vw;
-      bottom:210;
+      left:15vw;
+      bottom:170px;
       width:150px;
       height:175px;
       opacity:0;
@@ -631,8 +631,8 @@ img#tagged-avi {
     position:absolute;
     background-color: $cit-green;
     width:150px;
-    bottom:150px;
-    left:10vw;
+    bottom:110px;
+    left:15vw;
     border:none;
     height:40px;
     padding-bottom: 6px;
@@ -646,8 +646,8 @@ img#tagged-avi {
     position:absolute;
     background-color: $cit-green;
     width:150px;
-    bottom:90px;
-    left:10vw;
+    bottom:50px;
+    left:15vw;
     border:none;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -658,19 +658,19 @@ img#tagged-avi {
   }
 
   #speech-bubble-1{
-  bottom:150px;
-  left:150px;
-}
-#speech-bubble-2{
-  bottom:180px;
-  left:50%;
-  animation-delay:$delay + 0.8s;
-}
-#speech-bubble-3{
-  bottom:140px;
-  right:20%;
-  animation-delay:$delay + 1.2s;
-}
+    bottom:150px;
+    left:180px;
+  }
+  #speech-bubble-2{
+    bottom:140px;
+    left:50%;
+    animation-delay:$delay + 0.8s;
+  }
+  #speech-bubble-3{
+    bottom:100px;
+    right:20%;
+    animation-delay:$delay + 1.2s;
+  }
 }
 }
 }
